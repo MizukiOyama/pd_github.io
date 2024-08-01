@@ -27,13 +27,14 @@
 
 .head {
     position: fixed;
-    top: 3%;
+    top: 2.5%;
+    left: 2%;
     z-index: 1;
 
     a {
         font-family: liana, script;
         font-weight: 400;
-        font-size: clamp(0.8rem, calc(0.8rem + 0.5vw), 1rem);
+        font-size: clamp(1.2rem, calc(1.2rem + 0.5vw), 1.4rem);
         color: var(--base-color);
     }
 }
