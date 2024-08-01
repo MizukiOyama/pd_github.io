@@ -29,5 +29,12 @@ document.addEventListener('DOMContentLoaded', function () {
         showTab(currentTab);
     });
 
+    // Update the active tab immediately after the change in currentTab
+    function scrollHandler() {
+        setTimeout(() => showTab(currentTab), 0);
+    }
+
+    window.addEventListener('scroll', scrollHandler);
+
     showTab(currentTab);
 });
