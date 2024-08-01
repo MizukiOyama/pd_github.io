@@ -15,13 +15,13 @@
     <link rel="stylesheet" href="https://use.typekit.net/vht8cvv.css">
     <!--text-->
     <script>
-        (function(d) {
-          var config = {
-            kitId: 'avd7uus',
-            scriptTimeout: 3000,
-            async: true
-          },
-          h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+        (function (d) {
+            var config = {
+                kitId: 'avd7uus',
+                scriptTimeout: 3000,
+                async: true
+            },
+                h = d.documentElement, t = setTimeout(function () { h.className = h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive"; }, config.scriptTimeout), tk = d.createElement("script"), f = false, s = d.getElementsByTagName("script")[0], a; h.className += " wf-loading"; tk.src = 'https://use.typekit.net/' + config.kitId + '.js'; tk.async = true; tk.onload = tk.onreadystatechange = function () { a = this.readyState; if (f || a && a != "complete" && a != "loaded") return; f = true; clearTimeout(t); try { Typekit.load(config) } catch (e) { } }; s.parentNode.insertBefore(tk, s)
         })(document);
     </script>
     <!-- JavaScriptファイルの読み込み -->
@@ -40,26 +40,32 @@
     <meta http-equiv="Strict-Transport-Security" content="max-age=31536000">
     <!--CSP-->
 </head>
+
 <!--作品保護-->
 
 <body oncontextmenu="return false;" class="top">
     <header>
         <div id="header-container"></div>
     </header>
+
+    <!-- section01 -->
     <section id="section1">
         <div class="top-h1">
-        <h1>Precision
-        <br>
-        <div class="h1">Design</div></h1>
-        <p>こだわりを形に、想いをデザインする。</p>
+            <h1>Precision
+                <br>
+                <div class="h1">Design</div>
+            </h1>
+            <p>こだわりを形に、想いをデザインする。</p>
         </div>
         <img src="https://mizukioyama.github.io/pd/hp-img/sinju-suisai.png" alt="">
     </section>
+
+    <!-- section02 -->
     <section id="section2">
         <img src="https://mizukioyama.github.io/pd/hp-img/sousou-suisai.png" alt="">
         <div class="top-s2">
-        <h2>About Us</h2>
-        <p>僕たちについて</p>
+            <h2>About Us</h2>
+            <p>僕たちについて</p>
         </div>
         <p>
             僕たちのデザイン哲学は「こだわりの創造」にあります。
@@ -67,17 +73,24 @@
             細部へのこだわりがあなたの
         </p>
     </section>
+
+    <!-- section03 -->
     <section id="section3">
         <div class="top-s2">
-        <h2>Service</h2>
-        <p>提供するサービス</p>
+            <h2>Service</h2>
+            <p>提供するサービス</p>
         </div>
         <p></p>
     </section>
+
+    <!-- section04 -->
     <section id="section4">
         <h3>Contact</h3>
         <p>問合せ、申込</p>
     </section>
+
+    <div id="footer-container"></div>
+
 </body>
 
 </html>
