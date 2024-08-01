@@ -47,41 +47,6 @@ document.addEventListener("DOMContentLoaded", function() {
         };
     });
 
-    // タイピングアニメーション
-    $(".typing").each(function() {
-        var text = $(this).text();
-        var textbox = "";
-        var words = text.split(' ');
-
-        for (var i = 0; i < words.length; i++) {
-            var word = words[i];
-            for (var j = 0; j < word.length; j++) {
-                textbox += '<span>' + word[j] + '</span>';
-            }
-            if (i < words.length - 1) {
-                textbox += '<span>&nbsp;</span>';
-            }
-        }
-        $(this).html(textbox);
-
-        $(".typing span").each(function(i) {
-            var time = 100;
-            $(this).delay(time * i).fadeIn(time);
-        });
-
-        if (!$(this).hasClass('menu-animation-target')) {
-            var positionX = Math.random() * ($(this).parent().width() - $(this).width());
-            var positionY = Math.random() * ($(this).parent().height() - $(this).height());
-            $(this).css({ 'left': positionX, 'top': positionY });
-        }
-
-        if ($(this).hasClass('animation1')) {
-            $(this).addClass('animation1-style');
-        } else if ($(this).hasClass('animation2')) {
-            $(this).addClass('animation2-style');
-        }
-    });
-});
 
 // メニューの初期化関数
 function initializeMenu() {
@@ -107,10 +72,10 @@ function initializeMenu() {
 
 // ヘッダーの読み込みと初期化
 document.addEventListener("DOMContentLoaded", function() {
-    fetch("header.html")
+    fetch("header.html,footer.html")
         .then(response => response.text())
         .then(data => {
-            document.getElementById("header-container").innerHTML = data;
+            document.getElementById("header-container,footer-container").innerHTML = data;
             // メニューの初期化を再度呼び出し
             initializeMenu();
         });
