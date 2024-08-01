@@ -9,7 +9,9 @@
 body {
     margin: 0;
     padding: 0;
-    font-family: Arial, sans-serif;
+    font-family: zen-maru-gothic, sans-serif;
+    font-weight: 400;
+    font-style: normal;
     color: var(--main-color);
     background-color: var(--base-color);
     position: relative;
@@ -40,7 +42,6 @@ h1 {
     color: var(--base-color);
     font-family: "olicana-fine", sans-serif;
     font-weight: 400;
-    font-style: normal;
 }
 h2 {
     font-size: clamp(4rem, calc(4rem + 0.5vw), 6rem);
@@ -52,14 +53,10 @@ h3 {
 h2, h3, h4 {
     font-family: roca, sans-serif;
     font-weight: 300;
-    font-style: normal;
     color: var(--sub-color);
 }
 p {
     font-size: clamp(0.9rem, calc(0.9rem + 0.5vw), 1rem);
-    font-family: zen-maru-gothic, sans-serif;
-    font-weight: 400;
-    font-style: normal;
 }
 a {
     color: var(--accent-color);
@@ -84,9 +81,8 @@ section {
             margin-left: 5%;
             margin-bottom: 0;
         }
-        h2 {
-            color: var(--base-color);
-            margin-left: 20%;
+        .h1 {
+            margin-left: 10%;
         }
         p {
             color: var(--base-color);
