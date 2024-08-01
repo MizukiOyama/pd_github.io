@@ -75,6 +75,11 @@ section {
     img {
         position: absolute;
     }
+    .top-h1,.top-s2,.top-s3 {
+        position: absolute;
+        top: 10%;
+        margin-left: 10%;
+    }
 }
 .top {
     #section1 {
@@ -84,9 +89,6 @@ section {
         }
         .top-h1 {
             color: var(--base-color);
-            position: absolute;
-            top: 10%;
-            margin-left: 10%;
         }
         .h1 {
             font-size: clamp(6rem, calc(6rem + 0.5vw), 8rem);
@@ -96,6 +98,9 @@ section {
 
     #section2 {
         background-image: url('https://mizukioyama.github.io/pd/hp-img/section02.png');
+        img {
+            width: 50%;
+        }
     }
 
     #section3 {
