@@ -15,7 +15,7 @@ body {
     position: relative;
     width: 100%;
     height: auto;
-    overflow: hidden;
+    overflow-y: hidden;
 }
 
 section {
@@ -26,6 +26,10 @@ section {
 .top {
     #section1 {
         background-image: url('https://mizukioyama.github.io/pd/hp-img/section01.png');
+        h2 {
+            color: var(--base-color);
+            margin-left: 20%;
+        }
     }
 
     #section2 {
