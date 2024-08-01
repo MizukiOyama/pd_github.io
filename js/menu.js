@@ -1,7 +1,8 @@
 // menu.jsの内容
-console.log('Menu script loaded');
+console.log('Menu cursor');
 
 document.addEventListener("DOMContentLoaded", function() {
+    // カーソルとストーカーの作成と追加
     var cursor = document.createElement("div");
     cursor.id = "cursor";
     document.body.appendChild(cursor);
@@ -10,6 +11,7 @@ document.addEventListener("DOMContentLoaded", function() {
     stalker.id = "stalker";
     document.body.appendChild(stalker);
 
+    // リンクのホバーエフェクト
     document.querySelectorAll("a").forEach(function(link) {
         link.addEventListener("mouseenter", function() {
             cursor.classList.add("cursor--hover");
@@ -21,6 +23,7 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     });
 
+    // マウスムーブイベント
     document.addEventListener("mousemove", function(e) {
         var x = e.clientX;
         var y = e.clientY;
@@ -35,6 +38,28 @@ document.addEventListener("DOMContentLoaded", function() {
         }, 150);
     });
 
+    // メニューの初期化関数
+    function initializeMenu() {
+        jQuery(document).ready(function($) {
+            var $nav = $('#navArea');
+            var $btn = $('.toggle_btn');
+            var $mask = $('#mask');
+            var open = 'open';
+
+            $btn.on('click', function() {
+                if (!$nav.hasClass(open)) {
+                    $nav.addClass(open);
+                } else {
+                    $nav.removeClass(open);
+                }
+            });
+
+            $mask.on('click', function() {
+                $nav.removeClass(open);
+            });
+        });
+    }
+
     // メニューの初期化
     initializeMenu();
 
@@ -46,28 +71,4 @@ document.addEventListener("DOMContentLoaded", function() {
             img.removeAttribute('data-src');
         };
     });
-
-
-// メニューの初期化関数
-function initializeMenu() {
-    jQuery(document).ready(function($) {
-        var $nav = $('#navArea');
-        var $btn = $('.toggle_btn');
-        var $mask = $('#mask');
-        var open = 'open';
-
-        $btn.on('click', function() {
-            if (!$nav.hasClass(open)) {
-                $nav.addClass(open);
-            } else {
-                $nav.removeClass(open);
-            }
-        });
-
-        $mask.on('click', function() {
-            $nav.removeClass(open);
-        });
-    });
-}
-
 });

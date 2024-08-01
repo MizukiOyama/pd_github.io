@@ -1,8 +1,12 @@
 :root {
-    --main-color: #D6E4DA; /* メインカラー */
-    --sub-color: #003A42;  /* サブカラー */
-    --base-color: #2E2E2E; /* ベースカラー */
-    --accent-color: #00AF98; /* アクセントカラー */
+    --main-color: #D6E4DA;
+    /* メインカラー */
+    --sub-color: #003A42;
+    /* サブカラー */
+    --base-color: #2E2E2E;
+    /* ベースカラー */
+    --accent-color: #00AF98;
+    /* アクセントカラー */
 }
 
 /*== Scrollbar ==*/
@@ -10,21 +14,26 @@
     width: 0.2rem;
     background: rgba(40, 0, 0, 0.4);
 }
+
 ::-webkit-scrollbar-track {
-    box-shadow: 0 0 0px rgba(255, 255, 255, 0) inset ;
+    box-shadow: 0 0 0px rgba(255, 255, 255, 0) inset;
     background: #fff;
 }
+
 ::-webkit-scrollbar-thumb {
-    box-shadow: 0 0 2px 1px rgba(31, 30, 30, 0.76) inset ;
+    box-shadow: 0 0 2px 1px rgba(31, 30, 30, 0.76) inset;
     background: rgba(20, 20, 20);
 }
 
 .head {
-    font-size: clamp(0.8rem, calc(0.8rem + 0.5vw), 1rem);
-    color: var(--base-color);
     position: fixed;
     top: 3%;
     z-index: 1;
+
+    a {
+        font-size: clamp(0.8rem, calc(0.8rem + 0.5vw), 1rem);
+        color: var(--base-color);
+    }
 }
 
 body {
@@ -61,28 +70,33 @@ img {
 
 h1 {
     font-size: clamp(8rem, calc(8rem + 0.5vw), 10rem);
-    font-family: "olicana-fine", sans-serif;
+    font-family: liana, script;
     font-weight: 400;
+    font-style: normal;
     color: var(--base-color);
     line-height: 1em;
     width: fit-content;
 }
+
 h2 {
     font-size: clamp(4rem, calc(4rem + 0.5vw), 6rem);
 }
+
 h3 {
     font-size: clamp(3rem, calc(3rem + 0.5vw), 4rem);
 }
 
-h2, h3, h4 {
+h2,h3,h4 {
     font-family: roca, sans-serif;
     font-weight: 300;
     color: var(--sub-color);
 }
+
 p {
     font-size: clamp(0.9rem, calc(0.9rem + 0.5vw), 1rem);
     width: fit-content;
 }
+
 a {
     color: var(--accent-color);
 }
@@ -94,31 +108,43 @@ section {
     width: 100%;
     height: 100vh;
     background-size: cover;
+
     img {
         position: absolute;
     }
-    .top-h1,.top-s2,.top-s3 {
+
+    .top-h1,
+    .top-s2,
+    .top-s3 {
         position: absolute;
         top: 15%;
         margin-left: 10%;
     }
 }
+
 .top {
-    #section2,#section3,#section4 {
+
+    #section2,
+    #section3,
+    #section4 {
         img {
             width: 30%;
         }
     }
+
     #section1 {
         background-image: url('https://mizukioyama.github.io/pd/hp-img/section01.png');
+
         img {
             top: 5%;
             right: 0;
         }
+
         .top-h1 {
             color: var(--base-color);
             top: 50%;
         }
+
         .h1 {
             font-size: clamp(6rem, calc(6rem + 0.5vw), 8rem);
             margin-left: 70%;
@@ -127,6 +153,7 @@ section {
 
     #section2 {
         background-image: url('https://mizukioyama.github.io/pd/hp-img/section02.png');
+
         p {
             color: var(--base-color);
         }
@@ -141,9 +168,7 @@ section {
     }
 
     #section5 {
-    
+
         background-image: url('https://mizukioyama.github.io/pd/hp-img/section05.png');
     }
 }
-
-
