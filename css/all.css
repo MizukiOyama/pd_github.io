@@ -52,8 +52,10 @@ section {
 .top {
     #section1 {
         background-image: url('https://mizukioyama.github.io/pd/hp-img/section01.png');
+        display: flex;
+        align-items: center;
         h1 {
-            align-items: center;
+            margin-left: 5%;
             margin-bottom: 0;
         }
         h2 {
@@ -62,6 +64,7 @@ section {
         }
         p {
             color: var(--base-color);
+            margin-left: 5%;
         }
     }
 
