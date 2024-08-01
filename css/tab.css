@@ -1,3 +1,7 @@
+:root {
+    
+}
+
 body {
     font-family: Arial, sans-serif;
     background: #2E2E2E;
@@ -35,16 +39,19 @@ section {
 .tabs {
     display: flex;
     justify-content: center;
-    margin-bottom: 20px;
+    position: absolute;
+    top: 50%;
+    right: 0;
     transform:rotate(90deg);
 }
 
 .tab-button {
-    padding: 10px 20px;
+    padding: 1em 2em;
     border: 1px solid #ccc;
     background: #003A42;
     cursor: pointer;
-    margin: 0 5px;
+    margin: 0;
+    transform:rotate(90deg);
 }
 
 .tab-button.active {
