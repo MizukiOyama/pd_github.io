@@ -5,12 +5,60 @@
     --accent-color: #00AF98; /* アクセントカラー */
 }
 
+
 body {
-    background-color: var(--base-color);
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
     color: var(--main-color);
+    background-color: var(--base-color);
+    position: relative;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
 }
 
-h1, h2, h3 {
+section {
+    width: 100%;
+    height: 100%;
+    padding: 1em;
+}
+.top {
+    #section1 {
+        background-image: url('https://mizukioyama.github.io/pd/hp-img/section01.png');
+    }
+
+    #section2 {
+        background-image: url('https://mizukioyama.github.io/pd/hp-img/section02.png');
+    }
+
+    #section3 {
+        background-image: url('https://mizukioyama.github.io/pd/hp-img/section03.png');
+    }
+
+    #section4 {
+        background-image: url('https://mizukioyama.github.io/pd/hp-img/section04.png');
+    }
+
+    #section5 {
+    
+        background-image: url('https://mizukioyama.github.io/pd/hp-img/section05.png');
+    }
+}
+
+
+h1 {
+    font-size: clamp(8rem, calc(8rem + 0.5vw), 10rem);
+    color: var(--base-color)
+}
+h2 {
+    font-size: clamp(4rem, calc(4rem + 0.5vw), 6rem);
+}
+h3 {
+    font-size: clamp(3rem, calc(3rem + 0.5vw), 4rem);
+}
+
+h2, h3, h4 {
     color: var(--sub-color);
 }
 
