@@ -42,6 +42,7 @@ h1 {
     color: var(--base-color);
     font-family: "olicana-fine", sans-serif;
     font-weight: 400;
+    line-height: 1em;
 }
 h2 {
     font-size: clamp(4rem, calc(4rem + 0.5vw), 6rem);
@@ -83,6 +84,7 @@ section {
             margin-bottom: 0;
         }
         .h1 {
+            font-size: clamp(3rem, calc(3rem + 0.5vw), 5rem);
             margin-left: 10%;
         }
         p {
