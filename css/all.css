@@ -27,7 +27,7 @@ h1,h2,h3,h4,p,ul,ol,li,a,div,span,img {
 
 img {
     max-width: 100%;
-    width: 60%;
+    width: 65%;
     height: auto;
     object-fit: cover;
     vertical-align: middle;
@@ -35,6 +35,7 @@ img {
     background-repeat: no-repeat;
     background-size: cover;
     shape-margin: 0.75rem;
+    mix-blend-mode: difference;
 }
 
 h1 {
@@ -86,10 +87,12 @@ section {
     #section1 {
         background-image: url('https://mizukioyama.github.io/pd/hp-img/section01.png');
         img {
+            top: 5%;
             right: 0;
         }
         .top-h1 {
             color: var(--base-color);
+            top: 50%;
         }
         .h1 {
             font-size: clamp(6rem, calc(6rem + 0.5vw), 8rem);
