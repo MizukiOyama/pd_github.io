@@ -45,7 +45,7 @@ h1 {
     line-height: 1em;
     width: fit-content;
     position: absolute;
-    top: 50%;
+    top: 10%;
 }
 h2 {
     font-size: clamp(4rem, calc(4rem + 0.5vw), 6rem);
@@ -91,7 +91,7 @@ section {
             font-size: clamp(6rem, calc(6rem + 0.5vw), 8rem);
             margin-left: 10%;
         }
-        p {
+        .h1-p {
             color: var(--base-color);
             margin-left: 5%;
         }
