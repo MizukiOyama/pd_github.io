@@ -1,7 +1,7 @@
     /*PC*/
     footer {
         position: relative;
-        height: 500px;
+        height: 300px;
         padding: 6em 3em 0;
         bottom: 0;
         background: var(--main-color);
@@ -10,7 +10,6 @@
     }
     footer a {
         display: block;
-        font-weight: 100;
         margin-top: 0.3em;
         padding: 0%;
         opacity: 0.35;

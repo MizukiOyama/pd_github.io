@@ -86,7 +86,7 @@ h3 {
     font-size: clamp(3rem, calc(3rem + 0.5vw), 4rem);
 }
 
-h2,h3,h4 {
+h2,h3,h4,a {
     font-family: roca, sans-serif;
     font-weight: 300;
     color: var(--sub-color);
