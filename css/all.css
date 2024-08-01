@@ -15,12 +15,23 @@ body {
     position: relative;
     width: 100%;
     height: auto;
-    overflow-y: hidden;
+    overflow-x: hidden;
 }
 
-h1,h2,h3,h4,p,ul,ol,li,a,div,span {
+h1,h2,h3,h4,p,ul,ol,li,a,div,span,img {
     margin: 0;
     padding: 0;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+    vertical-align: middle;
+    font-style: italic;
+    background-repeat: no-repeat;
+    background-size: cover;
+    shape-margin: 0.75rem;
 }
 
 h1 {
