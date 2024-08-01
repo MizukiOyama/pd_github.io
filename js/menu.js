@@ -70,13 +70,3 @@ function initializeMenu() {
     });
 }
 
-// ヘッダーの読み込みと初期化
-document.addEventListener("DOMContentLoaded", function() {
-    fetch("header.html,footer.html")
-        .then(response => response.text())
-        .then(data => {
-            document.getElementById("header-container,footer-container").innerHTML = data;
-            // メニューの初期化を再度呼び出し
-            initializeMenu();
-        });
-});

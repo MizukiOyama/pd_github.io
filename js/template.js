@@ -1,31 +1,16 @@
-$(document).ready(function() {
-    // ヘッダーの読み込み
+// ヘッダーとフッターの読み込みと初期化
+document.addEventListener("DOMContentLoaded", function() {
     fetch("header.html")
         .then(response => response.text())
-        .then(data => {
-            $('#header-container').html(data);
-        })
-        .catch(error => {
-            console.error('Error loading header:', error);
+        .then(headerData => {
+            document.getElementById("header-container").innerHTML = headerData;
+            // メニューの初期化を再度呼び出し
+            initializeMenu();
         });
 
-    // サイドバーの読み込み
-    fetch("sidebar.html")
-        .then(response => response.text())
-        .then(data => {
-            $('#sidebar-container').html(data);
-        })
-        .catch(error => {
-            console.error('Error loading sidebar:', error);
-        });
-
-    // フッターの読み込み
     fetch("footer.html")
         .then(response => response.text())
-        .then(data => {
-            $('#footer-container').html(data);
-        })
-        .catch(error => {
-            console.error('Error loading footer:', error);
+        .then(footerData => {
+            document.getElementById("footer-container").innerHTML = footerData;
         });
 });
