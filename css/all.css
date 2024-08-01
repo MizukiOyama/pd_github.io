@@ -19,6 +19,13 @@
     background: rgba(20, 20, 20);
 }
 
+.head {
+    font-size: clamp(0.8rem, calc(0.8rem + 0.5vw), 1rem);
+    color: var(--base-color);
+    position: fixed;
+    top: 4%;
+}
+
 body {
     margin: 0;
     padding: 0;
