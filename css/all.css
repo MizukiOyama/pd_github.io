@@ -148,23 +148,30 @@ section {
             font-weight: 600;
             margin: 0 0 5% 0;
             text-align: left;
-
+        
             a {
                 position: absolute;
                 right: 10%;
                 bottom: 10%;
-                after {
-                    border-bottom: 1px var(--accent-color);
+        
+                &::after {
+                    content: "";
+                    display: inline-block;
+                    border-bottom: 1px solid var(--accent-color);
                 }
-                before {
+        
+                &::before {
+                    content: "";
+                    display: inline-block;
                     width: 20px;
-                    border-right: 1px var(--accent-color);
-                    transform:rotate(-30deg);
+                    border-right: 1px solid var(--accent-color);
+                    transform: rotate(-30deg);
                 }
             }
         }
+        
         .c {
-            text-align: center;
+            margin: 0 auto;
         }
     }
 
@@ -238,9 +245,6 @@ section {
             font-family: liana, script;
             font-weight: 400;    
             text-align: center;
-        }
-        .text {
-            margin: 0 auto;
         }
     }
 
