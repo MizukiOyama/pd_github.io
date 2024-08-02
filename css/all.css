@@ -33,8 +33,8 @@
 
     a {
         font-family: liana, script;
-        font-weight: 400;
-        font-size: clamp(1.2rem, calc(1.2rem + 0.5vw), 1.4rem);
+        font-weight: 500;
+        font-size: clamp(1.4rem, calc(1.4rem + 0.5vw), 1.8rem);
         color: var(--base-color);
         padding: 0.25em 0.5em;
     }
@@ -139,6 +139,7 @@ section {
             font-weight: 600;
         }
         .text {
+            font-weight: 600;
             margin-bottom: 5%;
         }
         .c {
