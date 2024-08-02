@@ -217,7 +217,7 @@ section {
                 width: 150px;
                 height: fit-content;
                 position: absolute;
-                right: 2%;
+                left: 0;
                 bottom: 7px;
                 border-bottom: 1px solid var(--accent-color);
             }
