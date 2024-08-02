@@ -144,6 +144,7 @@ section {
         .text {
             font-weight: 600;
             margin-bottom: 5%;
+            text-align: left;
         }
         .c {
             text-align: center;
@@ -185,8 +186,9 @@ section {
         width: 55%;
         height: 350px;
         margin: 0 auto;
+        padding: 1em 3em;
         background: rgba( 0, 58, 66, 0.1 );
-        box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+        box-shadow: 0 8px 32px 0 rgba( 214, 228, 218, 0.37 );
         backdrop-filter: blur( 5px );
         -webkit-backdrop-filter: blur( 5px );
         border-radius: 10px;
@@ -211,13 +213,11 @@ section {
 
     #section4 {
 
-        h3, p {
-            text-align: center;
-        }
         h3 {
             font-size: clamp(4rem, calc(4rem + 0.5vw), 6rem);
             font-family: liana, script;
             font-weight: 400;    
+            text-align: center;
         }
     }
 
