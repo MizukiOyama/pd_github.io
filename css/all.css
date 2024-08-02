@@ -188,7 +188,7 @@ section .slide {
         height: 100vh; /* 必要に応じて高さを指定 */
     }
 
-    .top-s {
+    section .top-s {
         max-width: 100%;
         width: 60%;
         height: 350px;
