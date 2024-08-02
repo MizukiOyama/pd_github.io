@@ -52,8 +52,6 @@ body {
     width: 100%;
     height: auto;
     overflow-x: hidden;
-    background-image: url('https://mizukioyama.github.io/pd/hp-img/bg-section01.png');
-    background-attachment: fixed;
 }
 
 h1,h2,h3,h4,p,ul,ol,li,a,div,span,img {
@@ -100,6 +98,7 @@ h2,h3,h4,a {
 p {
     font-size: clamp(1rem, calc(1rem + 0.5vw), 1.2rem);
     width: fit-content;
+    word-break: break-word
 }
 
 a {
@@ -150,7 +149,8 @@ section {
     }
 
     #section1 {
-        /*background-image: url('https://mizukioyama.github.io/pd/hp-img/bg-section01.png');*/
+        background-image: url('https://mizukioyama.github.io/pd/hp-img/bg-section01.png');
+        background-attachment: fixed;
 
         img {
             top: 5%;
@@ -189,14 +189,10 @@ section {
     }
 
     #section2 {
-    /*    background-image: url('https://mizukioyama.github.io/pd/hp-img/bg-section02.png');
-        background-image: url('https://mizukioyama.github.io/pd/hp-img/bg-section01.png');*/
 
     }
 
     #section3 {
-        /*background-image: url('https://mizukioyama.github.io/pd/hp-img/bg-section03.png');
-        background-image: url('https://mizukioyama.github.io/pd/hp-img/bg-section01.png');*/
 
         img {
             width: 25%;
@@ -205,8 +201,6 @@ section {
     }
 
     #section4 {
-        /*background-image: url('https://mizukioyama.github.io/pd/hp-img/bg-section04.png');
-        background-image: url('https://mizukioyama.github.io/pd/hp-img/bg-section01.png');*/
 
         h3, p {
             text-align: center;
@@ -219,7 +213,5 @@ section {
     }
 
     #section5 {
-        /*background-image: url('https://mizukioyama.github.io/pd/hp-img/bg-section05.png');
-        background-image: url('https://mizukioyama.github.io/pd/hp-img/bg-section01.png');*/
     }
 }
