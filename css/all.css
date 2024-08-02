@@ -105,9 +105,10 @@ p {
 }
 
 a {
-    font-size: clamp(1rem, calc(1rem + 0.5vw), 1.2rem);
+    font-size: clamp(1.2rem, calc(1.2rem + 0.5vw), 1.6rem);
     color: var(--accent-color);
     text-decoration: none;
+    padding: 0.25em 0.5em;
 }
 
 
@@ -146,6 +147,20 @@ section {
             font-weight: 600;
             margin: 0 0 5% 0;
             text-align: left;
+
+            a {
+                position: absolute;
+                right: 10%;
+                bottom: 10%;
+                ::after {
+                    border-bottom: 1px var(--accent-color);
+                }
+                ::before {
+                    width: 20px;
+                    border-right: 1px var(--accent-color);
+                    transform:rotate(-30deg);
+                }
+            }
         }
         .c {
             text-align: center;
