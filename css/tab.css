@@ -66,13 +66,20 @@
     transition: left 0.3s ease;
 }
 
-.tabs-container {
+.et-hero-tabs-container {
     position: relative;
 }
-.tabs-container--top {
+.et-hero-tabs-container--top {
     position: fixed;
     top: 0;
     width: 100%;
+}
+.et-hero-tab-slider {
+    position: absolute;
+    bottom: 0;
+    height: 4px;
+    background: #000;
+    transition: left 0.3s ease, width 0.3s ease;
 }
 
 

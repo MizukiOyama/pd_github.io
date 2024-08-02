@@ -8,7 +8,7 @@ jQuery(document).ready(function($) {
         }
 
         init() {
-            $('.tab').on('click', (event) => { 
+            $('.et-hero-tab').on('click', (event) => { 
                 this.onTabClick(event, $(event.target)); 
             });
             $(window).on('scroll', () => { this.onScroll(); });
@@ -33,11 +33,11 @@ jQuery(document).ready(function($) {
         }
 
         checkTabContainerPosition() {
-            let offset = $('.tabs').offset().top + $('.tabs').height() - this.tabContainerHeight;
+            let offset = $('.et-hero-tabs').offset().top + $('.et-hero-tabs').height() - this.tabContainerHeight;
             if ($(window).scrollTop() > offset) {
-                $('.tabs-container').addClass('tabs-container--top');
+                $('.et-hero-tabs-container').addClass('et-hero-tabs-container--top');
             } else {
-                $('.tabs-container').removeClass('tabs-container--top');
+                $('.et-hero-tabs-container').removeClass('et-hero-tabs-container--top');
             }
         }
 
@@ -46,7 +46,7 @@ jQuery(document).ready(function($) {
             let newCurrentTab = null;
             let self = this;
 
-            $('.tab').each(function() {
+            $('.et-hero-tab').each(function() {
                 let id = $(this).attr('href');
                 let offsetTop = $(id).offset().top - self.tabContainerHeight;
                 let offsetBottom = $(id).offset().top + $(id).height() - self.tabContainerHeight;
@@ -71,7 +71,7 @@ jQuery(document).ready(function($) {
                 width = this.currentTab.css('width');
                 left = this.currentTab.offset().left;
             }
-            $('.tab-slider').css({
+            $('.et-hero-tab-slider').css({
                 width: width,
                 left: left
             });

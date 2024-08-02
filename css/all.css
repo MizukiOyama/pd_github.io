@@ -153,10 +153,10 @@ section {
                 position: absolute;
                 right: 10%;
                 bottom: 10%;
-                &::after {
+                after {
                     border-bottom: 1px var(--accent-color);
                 }
-                &::before {
+                before {
                     width: 20px;
                     border-right: 1px var(--accent-color);
                     transform:rotate(-30deg);
@@ -238,6 +238,9 @@ section {
             font-family: liana, script;
             font-weight: 400;    
             text-align: center;
+        }
+        .text {
+            margin: 0 auto;
         }
     }
 
