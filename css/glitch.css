@@ -7,20 +7,33 @@
     }*/
     .glitch {
         z-index: 1;
-        animation: glitch .2s .3s steps(10) infinite;
+        animation: glitch 0.2s 0.3s steps(10) infinite;
     }
     .inner .is-active {
-        animation: glitch .1s .2s steps(100) infinite;
+        animation: glitch 0.1s 0.2s steps(100) infinite;
     }
 
 @keyframes glitch {
     0% {
-        text-shadow: 3px 1px 0 #010101, -3px -2px 0 #010101, -1px -3px 0 #343434, -1px -3px 0 #343434;
+        background: var(--base-color);
     }
-    5% {
-        text-shadow: -3px -5px 0 #010101, 3px 2px 0 #010101, -1 3px 0 #909090, 10px 5px 0 #909090;
-        filter: blur(0.5px);
-        color: transparent;
+    25% {
+        background: #F5FCF6;
+        filter: blur(2px);
+    }
+    50% {
+        background: var(--base-color);
+    }
+    75% {
+        background: #F5FCF6;
+        filter: blur(2px);
+    }
+    100% {
+        background: var(--base-color);
+    }
+/*    25% {
+        background: #F5FCF6;
+        filter: blur(2px);
     }
     10% {
         text-shadow: 0px 0 0 #010101, 0px 0 0 #010101, 2px 3px 0 #161616, 0px -5px 0 #161616;
@@ -99,7 +112,7 @@
         text-shadow: -35px -15px 0 #010101, -15px -25px 0 #000, -25px -20px 0 #ddd, -15px -20px 0 #010101;
         filter: blur(0.5px);
         color: transparent;
-    }
+    }*/
 }
 
 
