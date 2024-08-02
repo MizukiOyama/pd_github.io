@@ -23,14 +23,14 @@
 
   <!-- Typekitの読み込み -->
   <script>
-      (function (d) {
-          var config = {
-              kitId: 'avd7uus',
-              scriptTimeout: 3000,
-              async: true
-          },
-              h = d.documentElement, t = setTimeout(function () { h.className = h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive"; }, config.scriptTimeout), tk = d.createElement("script"), f = false, s = d.getElementsByTagName("script")[0], a; h.className += " wf-loading"; tk.src = 'https://use.typekit.net/' + config.kitId + '.js'; tk.async = true; tk.onload = tk.onreadystatechange = function () { a = this.readyState; if (f || a && a != "complete" && a != "loaded") return; f = true; clearTimeout(t); try { Typekit.load(config) } catch (e) { } }; s.parentNode.insertBefore(tk, s)
-      })(document);
+    (function (d) {
+      var config = {
+        kitId: 'avd7uus',
+        scriptTimeout: 3000,
+        async: true
+      },
+        h = d.documentElement, t = setTimeout(function () { h.className = h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive"; }, config.scriptTimeout), tk = d.createElement("script"), f = false, s = d.getElementsByTagName("script")[0], a; h.className += " wf-loading"; tk.src = 'https://use.typekit.net/' + config.kitId + '.js'; tk.async = true; tk.onload = tk.onreadystatechange = function () { a = this.readyState; if (f || a && a != "complete" && a != "loaded") return; f = true; clearTimeout(t); try { Typekit.load(config) } catch (e) { } }; s.parentNode.insertBefore(tk, s)
+    })(document);
   </script>
   <!-- JavaScriptファイルの読み込み -->
 
@@ -59,11 +59,12 @@
 <body oncontextmenu="return false;" class="top">
   <!-- Hero -->
   <section class="tabs">
-    <h1>Precision
-      <br>
-      <div class="h1">Design</div>
-    </h1>
-    <p class="caption">こだわりを形に、想いをデザインする。</p>
+    <div class="top-h1">
+      <h1>Precision
+        <br>
+        <div class="h1">Design</div>
+      </h1>
+      <p class="caption">こだわりを形に、想いをデザインする。</p>
     </div>
     <img src="https://mizukioyama.github.io/pd/hp-img/sinju-suisai.png" alt="" class="">
 
@@ -128,8 +129,9 @@
     </section>
 
   </main>
-  
+
   <div id="footer-container"></div>
-  
+
 </body>
+
 </html>
