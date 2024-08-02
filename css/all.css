@@ -52,7 +52,7 @@ body {
     width: 100%;
     height: auto;
     overflow-x: hidden;
-    background-image: url('https://mizukioyama.github.io/pd/hp-img/bg-section01.png');
+    background-image: url('https://mizukioyama.github.io/pd/hp-img/section01-bg.png');
     background-attachment: fixed;
 }
 
@@ -152,7 +152,7 @@ section {
     }
 
     #section1 {
-        
+
         img {
             top: 5%;
             right: 0;
@@ -171,6 +171,7 @@ section {
     }
 
     #section2,#section3,#section4,#section5 {
+        background-image: url('https://mizukioyama.github.io/pd/hp-img/section01-bg.png');
         display: flex;
         flex-direction: column; /* 縦に並べる */
         justify-content: center; /* 縦方向の中央寄せ */
