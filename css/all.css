@@ -127,38 +127,7 @@ section {
     img {
         position: absolute;
     }
-
-    .top-h1 {
-        position: absolute;
-        top: 15%;
-        margin-left: 10%;
-    }
-}
-
-/*==top page*/
-section .slide {
-
-    #section2,
-    #section3,
-    #section4 {
-        img {
-            width: 30%;
-        }
-        .caption {
-            font-weight: 600;
-        }
-        .text {
-            font-weight: 600;
-            margin: 0 0 5% 0;
-            text-align: left;
-        }
-        
-        .c {
-            margin: 0 auto;
-        }
-    }
-
-    section .tabs {
+    .tabs {
         /*background-image: url('https://mizukioyama.github.io/pd/hp-img/section01-bg.png');
         background-size: cover;*/
 
@@ -169,26 +138,46 @@ section .slide {
 
         .top-h1 {
             font-weight: 600;
+            position: absolute;
+            top: 15%;
+            left: 10%;
             color: var(--base-color);
-            top: 50%;
-        }
-
+        
         .h1 {
             font-size: clamp(6rem, calc(6rem + 0.5vw), 8rem);
             margin-left: 70%;
         }
+        .caption {
+            font-weight: 600;
+        }
+        }
     }
 
-    #section2,#section3,#section4,#section5 {
-        /*background-image: url('https://mizukioyama.github.io/pd/hp-img/section01-bg.png');*/
-        display: flex;
-        flex-direction: column; /* 縦に並べる */
-        justify-content: center; /* 縦方向の中央寄せ */
-        /*align-items: center; 横方向の中央寄せ */
-        height: 100vh; /* 必要に応じて高さを指定 */
+
+/*==top page*/
+    .slide {
+
+    #section2,
+    #section3,
+    #section4 {
+        img {
+            width: 30%;
+        }
+        
+        .text {
+            font-weight: 600;
+            margin: 0 0 5% 0;
+            text-align: left;
+        }
+    }
+    #section4 {
+        
+        .c {
+            margin: 0 auto;
+        }
     }
 
-    section .top-s {
+    .top-s {
         max-width: 100%;
         width: 60%;
         height: 350px;
