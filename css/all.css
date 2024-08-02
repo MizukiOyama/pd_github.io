@@ -152,9 +152,7 @@ section {
     }
 
     #section1 {
-        background-image: url('https://mizukioyama.github.io/pd/hp-img/bg-section01.png');
-        background-attachment: fixed;
-
+        
         img {
             top: 5%;
             right: 0;
