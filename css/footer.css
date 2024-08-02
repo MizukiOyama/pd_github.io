@@ -15,7 +15,6 @@
         padding: 0.5rem;
     }
     footer div {
-        font-size: clamp(1rem, calc(1rem + 0.5vw), 1.4rem);
         margin-top: 3.5em;
     }
     footer a:hover {
