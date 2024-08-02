@@ -85,6 +85,7 @@ h1 {
 
 h2 {
     font-size: clamp(4rem, calc(4rem + 0.5vw), 6rem);
+    width: fit-content;
 }
 
 h3 {
@@ -152,10 +153,10 @@ section {
                 position: absolute;
                 right: 10%;
                 bottom: 10%;
-                ::after {
+                &::after {
                     border-bottom: 1px var(--accent-color);
                 }
-                ::before {
+                &::before {
                     width: 20px;
                     border-right: 1px var(--accent-color);
                     transform:rotate(-30deg);
