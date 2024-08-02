@@ -52,6 +52,8 @@ body {
     width: 100%;
     height: auto;
     overflow-x: hidden;
+    background-image: url('https://mizukioyama.github.io/pd/hp-img/bg-section01.png');
+    background-attachment: fixed;
 }
 
 h1,h2,h3,h4,p,ul,ol,li,a,div,span,img {
@@ -102,6 +104,7 @@ p {
 }
 
 a {
+    font-size: clamp(1rem, calc(1rem + 0.5vw), 1.2rem);
     color: var(--accent-color);
     text-decoration: none;
 }
