@@ -1,13 +1,6 @@
-body {
-    font-family: "Century Gothic", 'Lato', sans-serif;
-}
 
-a {
-text-decoration: none;
-}
-
-.et-hero-tabs,
-.et-slide {
+.tabs,
+.slide {
 display: flex;
 flex-direction: column;
 justify-content: center;
@@ -29,7 +22,7 @@ h3 {
 }
 }
 
-.et-hero-tabs-container {
+.tabs-container {
 display: flex;
 flex-direction: row;
 position: absolute;
@@ -45,7 +38,7 @@ z-index: 10;
 }
 }
 
-.et-hero-tab {
+.tab {
 display: flex;
 justify-content: center;
 align-items: center;
@@ -61,7 +54,7 @@ letter-spacing: 0.1rem;
 }
 }
 
-.et-hero-tab-slider {
+.tab-slider {
 position: absolute;
 bottom: 0;
 width: 0;
@@ -71,8 +64,8 @@ transition: left 0.3s ease;
 }
 
 @media (min-width: 800px) {
-.et-hero-tabs,
-.et-slide {
+.tabs,
+.slide {
 h1 {
     font-size: 3rem;
 }
@@ -80,7 +73,7 @@ h3 {
     font-size: 1rem;
 }
 }
-.et-hero-tab {
+.tab {
     font-size: 1rem;
 }
 }
