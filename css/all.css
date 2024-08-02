@@ -100,7 +100,8 @@ h2,h3,h4,a {
 p {
     font-size: clamp(1rem, calc(1rem + 0.5vw), 1.2rem);
     width: fit-content;
-    word-break: break-word
+    margin: 0 auto;
+    word-break: keep-all;
 }
 
 a {
