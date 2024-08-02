@@ -7,7 +7,7 @@
     }*/
     .glitch {
         z-index: 1;
-        animation: glitch 0.2s 0.3s steps(10) infinite;
+        animation: glitch 7.2s 9.5s steps(10) infinite;
     }
     .inner .is-active {
         animation: glitch 0.1s 0.2s steps(100) infinite;
@@ -15,13 +15,13 @@
 
 @keyframes glitch {
     0% {
-        filter: grayscale(10%), blur(0), sepia(5%);
+        filter: grayscale(10%) blur(0) sepia(2%);
     }
     50% {
-        filter: grayscale(30%), blur(5px), sepia(0);
+        filter: grayscale(30%) blur(2px) sepia(0);
     }
     100% {
-        filter: grayscale(0%), blur(0px), sepia(10%);
+        filter: grayscale(0%) blur(1px) sepia(1%);
     }
 /*    25% {
         background: #F5FCF6;
