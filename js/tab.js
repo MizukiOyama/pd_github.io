@@ -49,7 +49,7 @@ jQuery(document).ready(function($) {
             $('.tab').each(function() {
                 let id = $(this).attr('href');
                 let offsetTop = $(id).offset().top - self.tabContainerHeight;
-                let offsetBottom = $(id).offset().top + $(id).height() - self.tabContainerHeight;
+                let offsetBottom = $(id).offset().top + $(id).outerHeight() - self.tabContainerHeight;
 
                 if ($(window).scrollTop() > offsetTop && $(window).scrollTop() < offsetBottom) {
                     newCurrentId = id;
@@ -68,7 +68,7 @@ jQuery(document).ready(function($) {
             let width = 0;
             let left = 0;
             if (this.currentTab) {
-                width = this.currentTab.css('width');
+                width = this.currentTab.outerWidth();
                 left = this.currentTab.offset().left;
             }
             $('.tab-slider').css({

@@ -212,13 +212,19 @@ section {
     
             &::after {
                 content: "";
-                display: inline;
+                display: block;
+                position: absolute;
+                right: 0;
+                bottom: 0;
                 border-bottom: 1px solid var(--accent-color);
             }
     
             &::before {
                 content: "";
-                display: inline;
+                display: block;
+                position: absolute;
+                right: 0;
+                bottom: 0;
                 width: 20px;
                 border-top: 1px solid var(--accent-color);
                 transform: rotate(-30deg);
