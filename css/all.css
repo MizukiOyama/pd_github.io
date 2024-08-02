@@ -102,7 +102,7 @@ p {
 
 a {
     color: var(--accent-color);
-    border-bottom: none;
+    text-decoration: none;
 }
 
 
@@ -156,7 +156,7 @@ section {
         }
     }
     #section2,#section3,#section4,#section5 {
-        padding: 1em 2em;
+        
     }
 
     .top-s {
