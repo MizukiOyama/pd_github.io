@@ -1,12 +1,14 @@
 :root {
-    --main-color: #D6E4DA;
     /* メインカラー */
-    --sub-color: #003A42;
+    --main-color: #D6E4DA;
     /* サブカラー */
-    --base-color: #2E2E2E;
+    --sub-color: #003A42;
     /* ベースカラー */
-    --accent-color: #00AF98;
+    --base-color: #2E2E2E;
     /* アクセントカラー */
+    --accent-color: #00AF98;
+    /* rgba(245, 252, 246)*/
+    --white-collar: #F5FCF6;
 }
 
 /*== Scrollbar ==*/
@@ -17,7 +19,7 @@
 
 ::-webkit-scrollbar-track {
     box-shadow: 0 0 0px rgba(255, 255, 255, 0) inset;
-    background: #fff;
+    background: var(--white-collar);
 }
 
 ::-webkit-scrollbar-thumb {
@@ -134,7 +136,7 @@ section {
 }
 
 /*==top page*/
-.top {
+.main {
 
     #section2,
     #section3,
