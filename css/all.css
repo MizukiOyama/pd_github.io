@@ -210,16 +210,14 @@ section {
             right: 10%;
             bottom: 10%;
     
-            &::after {
+            &::before {
                 content: "";
                 display: block;
-                position: absolute;
-                right: 0;
-                bottom: 0;
+                width: 150px;
                 border-bottom: 1px solid var(--accent-color);
             }
     
-            &::before {
+            &::after {
                 content: "";
                 display: block;
                 position: absolute;
@@ -227,7 +225,7 @@ section {
                 bottom: 0;
                 width: 20px;
                 border-top: 1px solid var(--accent-color);
-                transform: rotate(-30deg);
+                transform: rotate(30deg);
             }
         }
     }
