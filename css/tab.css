@@ -5,9 +5,9 @@
     justify-content: center;
     height: 100vh;
     position: relative;
-    padding: 0 2em;
 }
 
+/*
 .tabs h1,
 .slide h1 {
     font-size: 2rem;
@@ -20,7 +20,7 @@
     font-size: 1rem;
     letter-spacing: 0.3rem;
     opacity: 0.6;
-}
+}*/
 
 .tabs-container {
     display: flex;
@@ -44,14 +44,14 @@
     justify-content: center;
     align-items: center;
     flex: 1;
-    color: #000;
+    color: var(--base-color);
     letter-spacing: 0.1rem;
     transition: all 0.5s ease;
     font-size: 0.8rem;
 }
 
 .tab:hover {
-    color: white;
+    color: var(--main-color);
     background: rgba(102, 177, 241, 0.8);
     transition: all 0.5s ease;
 }
@@ -61,7 +61,7 @@
     bottom: 0;
     width: 0;
     height: 6px;
-    background: #66B1F1;
+    background: var(--sub-color);
     transition: left 0.3s ease;
 }
 
