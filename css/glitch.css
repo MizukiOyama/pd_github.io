@@ -15,21 +15,13 @@
 
 @keyframes glitch {
     0% {
-        background: var(--base-color);
-    }
-    25% {
-        background: #F5FCF6;
-        filter: blur(2px);
+        filter: grayscale(10%), blur(0), sepia(5%);
     }
     50% {
-        background: var(--base-color);
-    }
-    75% {
-        background: #F5FCF6;
-        filter: blur(2px);
+        filter: grayscale(30%), blur(5px), sepia(0);
     }
     100% {
-        background: var(--base-color);
+        filter: grayscale(0%), blur(0px), sepia(10%);
     }
 /*    25% {
         background: #F5FCF6;
