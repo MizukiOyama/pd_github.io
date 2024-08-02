@@ -66,21 +66,6 @@
     transition: left 0.3s ease;
 }
 
-.tabs-container {
-    position: relative;
-}
-.tabs-container--top {
-    position: fixed;
-    top: 0;
-    width: 100%;
-}
-.tab-slider {
-    position: absolute;
-    bottom: 0;
-    height: 4px;
-    background: #000;
-    transition: left 0.3s ease, width 0.3s ease;
-}
 
 @media (min-width: 800px) {
 
