@@ -155,13 +155,19 @@ section {
             margin-left: 70%;
         }
     }
+
     #section2,#section3,#section4,#section5 {
-        
+        display: flex;
+        flex-direction: column; /* 縦に並べる */
+        justify-content: center; /* 縦方向の中央寄せ */
+        align-items: center; /* 横方向の中央寄せ */
+        height: 100vh; /* 必要に応じて高さを指定 */
     }
 
     .top-s {
         max-width: 100%;
         width: 1000px;
+        height: 500px;
         margin: 0 auto;
 
         p {
