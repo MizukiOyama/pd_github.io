@@ -148,26 +148,6 @@ section {
             font-weight: 600;
             margin: 0 0 5% 0;
             text-align: left;
-        
-            a {
-                position: absolute;
-                right: 10%;
-                bottom: 10%;
-        
-                &::after {
-                    content: "";
-                    display: inline-block;
-                    border-bottom: 1px solid var(--accent-color);
-                }
-        
-                &::before {
-                    content: "";
-                    display: inline-block;
-                    width: 20px;
-                    border-right: 1px solid var(--accent-color);
-                    transform: rotate(-30deg);
-                }
-            }
         }
         
         .c {
@@ -223,6 +203,26 @@ section {
 
         p {
             color: var(--base-color);
+        }
+        
+        a {
+            position: absolute;
+            right: 10%;
+            bottom: 10%;
+    
+            &::after {
+                content: "";
+                display: inline-block;
+                border-bottom: 1px solid var(--accent-color);
+            }
+    
+            &::before {
+                content: "";
+                display: inline-block;
+                width: 20px;
+                border-right: 1px solid var(--accent-color);
+                transform: rotate(-30deg);
+            }
         }
     }
 
