@@ -135,6 +135,15 @@ section {
         img {
             width: 30%;
         }
+        .caption {
+            font-weight: 600;
+        }
+        .text {
+            margin-bottom: 5%;
+        }
+        .c {
+            text-align: center;
+        }
     }
 
     #section1 {
@@ -146,6 +155,7 @@ section {
         }
 
         .top-h1 {
+            font-weight: 600;
             color: var(--base-color);
             top: 50%;
         }
@@ -160,14 +170,14 @@ section {
         display: flex;
         flex-direction: column; /* 縦に並べる */
         justify-content: center; /* 縦方向の中央寄せ */
-        align-items: center; /* 横方向の中央寄せ */
+        /*align-items: center; 横方向の中央寄せ */
         height: 100vh; /* 必要に応じて高さを指定 */
     }
 
     .top-s {
         max-width: 100%;
         width: 55%;
-        height: 500px;
+        height: 350px;
         margin: 0 auto;
 
         p {
