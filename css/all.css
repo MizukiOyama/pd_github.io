@@ -119,9 +119,9 @@ section {
     position: relative;
     width: 100%;
     height: 100vh;
-    background-size: cover;
     background-image: url('https://mizukioyama.github.io/pd/hp-img/section01-bg.png');
-    background-size: cover;
+    background-size: contain;
+    background-repeat: no-repeat;
     img {
         position: absolute;
     }
