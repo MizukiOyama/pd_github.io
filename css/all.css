@@ -207,11 +207,11 @@ section .top-s a::after {
     flex-direction: row;
 }
 #tab-1 .top-s {
-    width: 60%;
+    width: clamp(55%, 100%, 45%);
     transform: translate(20%,20%);
 }
 #tab-2 .top-s {
-    width: 60%;
+    width: clamp(55%, 100%, 45%);
     transform: translate(0%,-20%);
 }
 .section1 .img {
