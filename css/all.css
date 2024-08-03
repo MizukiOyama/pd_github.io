@@ -152,10 +152,10 @@ section {
     font-weight: 600;
     margin: 0;
   }
-  
-  #section2 img,
-  #section3 img,
-  #section4 img {
+  #section1 .glitch,  
+  #section2 .glitch,
+  #section3 .glitch,
+  #section4 .glitch {
     width: 30%;
   }
   

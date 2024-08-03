@@ -51,6 +51,7 @@
     font-size: 1rem;
     height: 50px;
     background: rgba(245, 252, 246, 0.3);
+    mix-blend-mode: color-burn;
 }
 
 
