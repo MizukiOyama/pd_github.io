@@ -200,8 +200,8 @@ section .top-s a::after {
     transform: rotate(30deg);
 }
 
-.section1,
-.section2 {
+.slide #tab-1,
+.slide #tab-2 {
     align-items: center;
     justify-content: center;
     flex-direction: row;
