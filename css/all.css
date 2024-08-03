@@ -58,18 +58,7 @@ body {
     background-attachment: fixed;*/
 }
 
-h1,
-h2,
-h3,
-h4,
-p,
-ul,
-ol,
-li,
-a,
-div,
-span,
-img {
+h1,h2,h3,h4,p,ul,ol,li,a,div,span,img {
     margin: 0;
     padding: 0;
 }
@@ -106,10 +95,7 @@ h3 {
     font-size: clamp(3rem, calc(3rem + 0.5vw), 4rem);
 }
 
-h2,
-h3,
-h4,
-a {
+h2,h3,h4,a {
     font-family: roca, sans-serif;
     font-weight: 300;
     color: var(--sub-color);
@@ -214,6 +200,45 @@ section .top-s a::after {
     transform: rotate(30deg);
 }
 
+section #section1,
+section #section2 {
+    display: flex;
+    padding: 1em 2em;
+}
+
+section #section1 .img img,
+section #section2 .img img {
+    position: fixed;
+}
+
+section #section1 .img {
+    width: 30%;
+    height: 500px;
+    top: 0;
+    left: 0;
+}
+
+section #section1 .img::after {
+    content: "";
+    border: 5px solid var(--base-color);
+    right: -5%;
+    top: -5%;
+}
+
+section #section2 .img {
+    width: 25%;
+    height: 450px;
+    right: 5%;
+    bottom: 5%;
+}
+
+section #section2 .img::after {
+    content: "";
+    border: 5px solid var(--base-color);
+    right: 10%;
+    bottom: 10%;
+}
+
 section #section2 p {
     margin: 0 auto;
     padding: 1em;
@@ -255,8 +280,9 @@ section img {
 }
 
 .section1 img {
-    top: 5%;
+    top: 10%;
     left: 0;
+    transform:rotate(-10deg);
 }
 
 .section2 img {
