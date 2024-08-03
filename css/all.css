@@ -219,6 +219,8 @@ section .top-s a::after {
     top: 10%;
     left: 10%;
     z-index: 1;
+    background-image: url('https://mizukioyama.github.io/pd/hp-img/2341suisai.png');
+    background-attachment: fixed;
 }
 
 
@@ -232,7 +234,7 @@ section .top-s a::after {
     bottom: 5%;
     z-index: 1;
     background-image: url('https://mizukioyama.github.io/pd/hp-img/2341suisai.png');
-    position: fixed;
+    background-attachment: fixed;
 }
 
 /*.section2 p {
