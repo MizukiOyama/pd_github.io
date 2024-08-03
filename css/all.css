@@ -8,7 +8,7 @@
     /* アクセントカラー */
     --accent-color: #00AF98;
     /* rgba(245, 252, 246)*/
-    --white-collar: #F5FCF6;
+    --white-color: #F5FCF6;
 }
 
 /*== Scrollbar ==*/
@@ -19,7 +19,7 @@
 
 ::-webkit-scrollbar-track {
     box-shadow: 0 0 0px rgba(255, 255, 255, 0) inset;
-    background: var(--white-collar);
+    background: var(--white-color);
 }
 
 ::-webkit-scrollbar-thumb {
@@ -124,14 +124,7 @@ section {
     background-size: cover;
     background-repeat: no-repeat;
   }
-  
-
-  section #top-img {
-    top: 0%;
-    right: 0;
-    width: 75%;
-  }
-  
+    
   section .top-h1 {
     font-weight: 600;
     position: absolute;
@@ -214,28 +207,34 @@ section {
 
 
   /*===img*/
+  section #top-img {
+    top: -5%;
+    right: 0;
+    width: 75%;
+  }
+
   section img {
     position: absolute;
   }
 
-  #section1 img,
-  #section2 img,
-  #section3 img,
-  #section4 img {
+  .section1 img,
+  .section2 img,
+  .section3 img,
+  .section4 img {
     width: 30%;
   }
 
-  #section1 img {
+  .section1 img {
       top: 5%;
       left: 0;
   }
 
-  #section2 img {
+  .section2 img {
       top: 10%;
       right: 5%;
   }
 
-  #section3 img {
+  .section3 img {
     width: 25%;
     right: 0;
   }
