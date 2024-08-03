@@ -210,6 +210,10 @@ section .top-s a::after {
     width: 60%;
     transform: translate(20%,20%);
 }
+#tab-1 .top-s {
+    width: 60%;
+    transform: translate(0%,-20%);
+}
 .section1 .img {
     content: "";
     width: 400px;
@@ -279,14 +283,14 @@ section img {
 }
 
 .section1 img {
-    top: 10%;
+    top: 55%;
     left: 0;
-    transform:rotate(-10deg);
+    /*transform:rotate(-10deg);*/
 }
 
 .section2 img {
-    top: 10%;
-    right: 5%;
+    bottom: 3%;
+    right: 3%;
 }
 
 .section3 img {
