@@ -4,9 +4,15 @@
         height: 450px;
         padding: 1em 3em 0;
         bottom: 0;
-        background: var(--main-color);
+        /*background: var(--main-color);*/
         backdrop-filter: blur(30px);
         z-index: 100;
+        display: flex;
+        /* グラスモーフィズム */
+        background: rgba(245, 252, 246, 0.15);
+        backdrop-filter: blur(3px); 
+        border-radius: 10px; 
+        border: 1px solid rgba(245, 252, 246, 0.18);
     }
     footer a {
         font-size: clamp(1.4rem, calc(1.4rem + 0.5vw), 1.8rem);
