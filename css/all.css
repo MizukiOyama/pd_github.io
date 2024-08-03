@@ -208,25 +208,19 @@ section .top-s a::after {
 }
 #tab-1 .top-s {
     width: 60%;
-    transform: translate(10%,50%);
+    transform: translate(20%,20%);
 }
 .section1 .img {
     content: "";
-    width: 300px;
-    height: 500px;
+    width: 400px;
+    height: 350px;
     border: 5px solid var(--base-color);
     position: absolute;
-    top: 0;
-    left: 0;
+    top: 10%;
+    left: 10%;
     z-index: 1;
 }
 
-.section1 .img::after {
-    content: "";
-    border: 5px solid var(--base-color);
-    right: -5%;
-    top: -5%;
-}
 
 .section2 .img {
     content: "";
@@ -237,13 +231,9 @@ section .top-s a::after {
     right: 5%;
     bottom: 5%;
     z-index: 1;
-}
-
-.section2 .img::after {
-    content: "";
     background-image: url('https://mizukioyama.github.io/pd/hp-img/2341suisai.png');
     position: fixed;
-    }
+}
 
 /*.section2 p {
     margin: 0 auto;
