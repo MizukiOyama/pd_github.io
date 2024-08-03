@@ -28,8 +28,8 @@
 }
 
 .head {
-    position: fixed;
-    top: 2.5%;
+    position: absolute;
+    top: 0.25%;
     left: 2%;
     z-index: 1;
 
@@ -151,12 +151,6 @@ section {
   section .top-h1 .caption {
     font-weight: 600;
     margin: 0;
-  }
-  #section1 .glitch,  
-  #section2 .glitch,
-  #section3 .glitch,
-  #section4 .glitch {
-    width: 30%;
   }
   
   #section2 .text,
