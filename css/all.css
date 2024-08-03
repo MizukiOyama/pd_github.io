@@ -204,6 +204,7 @@ section #section1,
 section #section2 {
     display: flex;
     padding: 1em 2em;
+    column-count: 2;
 }
 
 section #section1 .img img,
