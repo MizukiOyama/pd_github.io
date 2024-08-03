@@ -206,7 +206,7 @@ section .top-s a::after {
     justify-content: center;
     flex-direction: row;
 }
-section #tab-1 .top-s {
+#tab-1 .top-s {
     width: 60%;
     transform: translate(10%,50%);
 }
