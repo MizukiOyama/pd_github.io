@@ -200,47 +200,47 @@ section .top-s a::after {
     transform: rotate(30deg);
 }
 
-section #section1,
-section #section2 {
+section .section1,
+section .section2 {
     display: flex;
     padding: 1em 2em;
     column-count: 2;
 }
 
-section #section1 .img img,
-section #section2 .img img {
+section .section1 .img img,
+section .section2 .img img {
     position: fixed;
 }
 
-section #section1 .img {
+section .section1 .img {
     width: 30%;
     height: 500px;
     top: 0;
     left: 0;
 }
 
-section #section1 .img::after {
+section .section1 .img::after {
     content: "";
     border: 5px solid var(--base-color);
     right: -5%;
     top: -5%;
 }
 
-section #section2 .img {
+section .section2 .img {
     width: 25%;
     height: 450px;
     right: 5%;
     bottom: 5%;
 }
 
-section #section2 .img::after {
+section .section2 .img::after {
     content: "";
     border: 5px solid var(--base-color);
     right: 10%;
     bottom: 10%;
 }
 
-section #section2 p {
+section .section2 p {
     margin: 0 auto;
     padding: 1em;
     border: 1px solid var(--base-color);
@@ -250,14 +250,14 @@ section #section2 p {
     align-items: center;
 }
 
-#section4 h3 {
+.section4 h3 {
     font-size: clamp(4rem, calc(4rem + 0.5vw), 6rem);
     font-family: liana, script;
     font-weight: 400;
     text-align: center;
 }
 
-#section4 .c {
+.section4 .c {
     margin: 0 auto;
 }
 
