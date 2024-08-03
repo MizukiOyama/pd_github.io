@@ -206,7 +206,7 @@ section .top-s a::after {
     justify-content: center;
     flex-direction: row;
 }
-.top-s #tab-1 {
+section .top-s #tab-1 {
     width: 60%;
     transform: translate(10%,50%);
 }
@@ -260,7 +260,7 @@ section .top-s a::after {
     text-align: center;
 }
 
-.section4 .text {
+#tab-4 .top-s .text {
     text-align: center;
     margin: 0 auto;
 }
