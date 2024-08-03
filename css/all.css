@@ -150,6 +150,7 @@ section {
   
   section .top-h1 .caption {
     font-weight: 600;
+    margin: 0;
   }
   
   #section2 img,
@@ -158,14 +159,14 @@ section {
     width: 30%;
   }
   
-  section #section2 .text,
-  section #section3 .text,
-  section #section4 .text {
+  #section2 .text,
+  #section3 .text,
+  #section4 .text {
     font-weight: 600;
     margin: 0 0 5% 0;
     text-align: left;
   }
-    
+
   section .top-s {
     max-width: 100%;
     width: 60%;
@@ -173,6 +174,7 @@ section {
     margin: 0 auto;
     padding: 1em 3em;
     z-index: 1;
+    position: relative;
     display: flex;
     flex-direction: column; /* 縦に並べる */
     justify-content: center; /* 縦方向の中央寄せ */

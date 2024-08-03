@@ -4,12 +4,21 @@ jQuery(document).ready(function ($) {
             this.currentId = null;
             this.currentTab = null;
             this.tabContainerHeight = 70;
+            this.init();
+        }
+
+        init() {
             let self = this;
             $('.tab').click(function (event) {
                 self.onTabClick(event, $(this));
             });
-            $(window).scroll(() => { this.onScroll(); });
-            $(window).resize(() => { this.onResize(); });
+            $(window).scroll(() => {
+                this.onScroll();
+            });
+            $(window).resize(() => {
+                this.onResize();
+            });
+            this.onScroll();
         }
 
         onTabClick(event, element) {
@@ -57,7 +66,7 @@ jQuery(document).ready(function ($) {
                     }
                 }
             });
-            if (this.currentId != newCurrentId || this.currentId === null) {
+            if (this.currentId !== newCurrentId || this.currentId === null) {
                 this.currentId = newCurrentId;
                 this.currentTab = newCurrentTab;
                 this.setSliderCss();
@@ -65,14 +74,14 @@ jQuery(document).ready(function ($) {
         }
 
         setSliderCss() {
-            let width = 0;
-            let left = 0;
             if (this.currentTab) {
-                width = this.currentTab.css('width');
-                left = this.currentTab.offset().left;
+                let width = this.currentTab.outerWidth();
+                let left = this.currentTab.offset().left;
+                $('.tab-slider').css({
+                    width: width,
+                    left: left
+                });
             }
-            $('.tab-slider').css('width', width);
-            $('.tab-slider').css('left', left);
         }
     }
 
