@@ -8,23 +8,7 @@
     .glitch {
         animation: glitch 7.2s 9.5s steps(10) infinite;
     }
-    #section1 .glitch,
-    #section2 .glitch,
-    #section3 .glitch,
-    #section4 .glitch {
-      width: 30%;
-    }
 
-    #section1 .glitch {
-        top: 5%;
-        left: 0;
-    }
-
-    #section2 .glitch {
-        top: 10%;
-        right: 5%;
-    }
-    
     .inner .is-active {
         animation: glitch 0.1s 0.2s steps(100) infinite;
     }

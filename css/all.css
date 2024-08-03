@@ -125,10 +125,7 @@ section {
     background-repeat: no-repeat;
   }
   
-  section img {
-    position: absolute;
-  }
-  
+
   section #top-img {
     top: 0%;
     right: 0;
@@ -153,9 +150,7 @@ section {
     margin: 0;
   }
   
-  #section2 .text,
-  #section3 .text,
-  #section4 .text {
+  section .top-s .text {
     font-weight: 600;
     margin: 0 0 5% 0;
     text-align: left;
@@ -205,12 +200,7 @@ section {
     border-top: 1px solid var(--accent-color);
     transform: rotate(30deg);
   }
-  
-  #section3 img {
-    width: 25%;
-    right: 0;
-  }
-  
+    
   #section4 h3 {
     font-size: clamp(4rem, calc(4rem + 0.5vw), 6rem);
     font-family: liana, script;
@@ -220,4 +210,32 @@ section {
 
   #section4 .c {
     margin: 0 auto;
+  }
+
+
+  /*===img*/
+  section img {
+    position: absolute;
+  }
+
+  #section1 img,
+  #section2 img,
+  #section3 img,
+  #section4 img {
+    width: 30%;
+  }
+
+  #section1 img {
+      top: 5%;
+      left: 0;
+  }
+
+  #section2 img {
+      top: 10%;
+      right: 5%;
+  }
+
+  #section3 img {
+    width: 25%;
+    right: 0;
   }
