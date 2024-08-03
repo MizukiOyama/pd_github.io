@@ -42,16 +42,16 @@
 }
 
 .tab {
+    font-size: clamp(1rem, calc(1rem + 0.5vw), 1.4rem);
+    height: 50px;
+    color: var(--base-color);
+    background: rgba(245, 252, 246, 0.53);
     display: flex;
     justify-content: center;
     align-items: center;
     flex: 1;
-    color: var(--base-color);
     letter-spacing: 0.1rem;
     transition: all 0.5s ease;
-    font-size: clamp(1rem, calc(1rem + 0.5vw), 1.4rem);
-    height: 50px;
-    background: rgba(245, 252, 246, 0.53);
 }
 
 
@@ -67,7 +67,7 @@
     width: 0;
     height: 2px;
     border-radius: 10px;
-    background-color: var(--sub-color);
+    background-color: var(--base-color);
     transition: left 0.3s ease;
 }
 

@@ -283,12 +283,14 @@ section img {
 }
 
 .section1 img {
+    width: 40%;
     top: 55%;
     left: 0;
     /*transform:rotate(-10deg);*/
 }
 
 .section2 img {
+    width: 25%;
     bottom: 3%;
     right: 3%;
 }
