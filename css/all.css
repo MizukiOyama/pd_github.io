@@ -214,7 +214,7 @@ section .top-s a::after {
     transform: rotate(30deg);
 }
 
-#section2 p {
+section #section2 p {
     margin: 0 auto;
     padding: 1em;
     border: 1px solid var(--base-color);
