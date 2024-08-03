@@ -123,132 +123,104 @@ section {
     background-image: url('https://mizukioyama.github.io/pd/hp-img/section01-bg.png');
     background-size: cover;
     background-repeat: no-repeat;
-
-    img {
-        position: absolute;
-    }
-
-    .tabs {
-        /* background-image: url('https://mizukioyama.github.io/pd/hp-img/section01-bg.png'); */
-        /* background-size: cover; */
-
-        img {
-            top: 3%;
-            right: 0;
-        }
-
-        .top-h1 {
-            font-weight: 600;
-            position: absolute;
-            top: 15%;
-            left: 10%;
-            color: var(--base-color);
-
-            .h1 {
-                font-size: clamp(6rem, calc(6rem + 0.5vw), 8rem);
-                margin-left: 70%;
-            }
-
-            .caption {
-                font-weight: 600;
-            }
-        }
-    }
-
-    .slide {
-        #section2,
-        #section3,
-        #section4 {
-            img {
-                width: 30%;
-            }
-
-            .text {
-                font-weight: 600;
-                margin: 0 0 5% 0;
-                text-align: left;
-            }
-        }
-
-        #section4 {
-            .c {
-                margin: 0 auto;
-            }
-        }
-
-        .top-s {
-            max-width: 100%;
-            width: 60%;
-            height: 350px;
-            margin: 0 auto;
-            padding: 1em 3em;
-            display: flex;
-            flex-direction: column; /* 縦に並べる */
-            justify-content: center; /* 縦方向の中央寄せ */
-            /* グラスモーフィズム */
-            /* background: rgba( 46, 46, 46, 0.15 ); */
-            /* box-shadow: 0 3px 8px 2px rgba( 46, 46, 46, 0.37 ); */
-            /* backdrop-filter: blur(3px); */
-            /* border-radius: 10px; */
-            /* border: 1px solid rgba( 255, 255, 255, 0.18 ); */
-
-            p {
-                color: var(--base-color);
-            }
-
-            a {
-                position: absolute;
-                right: 10%;
-                bottom: 10%;
-
-                &::before {
-                    content: "";
-                    display: block;
-                    width: 150px;
-                    height: fit-content;
-                    position: absolute;
-                    left: 0;
-                    bottom: 7px;
-                    border-bottom: 1px solid var(--accent-color);
-                }
-
-                &::after {
-                    content: "";
-                    display: block;
-                    position: absolute;
-                    right: -20%;
-                    bottom: 7px;
-                    width: 20px;
-                    border-top: 1px solid var(--accent-color);
-                    transform: rotate(30deg);
-                }
-            }
-        }
-
-        #section2 {
-            img {
-                width: 20%;
-                top: 10%;
-                left: 0;
-            }
-        }
-
-        #section3 {
-            img {
-                width: 25%;
-                right: 0;
-            }
-        }
-
-        #section4 {
-            h3 {
-                font-size: clamp(4rem, calc(4rem + 0.5vw), 6rem);
-                font-family: liana, script;
-                font-weight: 400;
-                text-align: center;
-            }
-        }
-
-        #section5 {}
-    }
-}
+  }
+  
+  section img {
+    position: absolute;
+  }
+  
+  section .tabs img {
+    top: 3%;
+    right: 0;
+  }
+  
+  section .tabs .top-h1 {
+    font-weight: 600;
+    position: absolute;
+    top: 15%;
+    left: 10%;
+    color: var(--base-color);
+  }
+  
+  section .tabs .top-h1 .h1 {
+    font-size: clamp(6rem, calc(6rem + 0.5vw), 8rem);
+    margin-left: 70%;
+  }
+  
+  section .tabs .top-h1 .caption {
+    font-weight: 600;
+  }
+  
+  section .slide #section2 img,
+  section .slide #section3 img,
+  section .slide #section4 img {
+    width: 30%;
+  }
+  
+  section .slide #section2 .text,
+  section .slide #section3 .text,
+  section .slide #section4 .text {
+    font-weight: 600;
+    margin: 0 0 5% 0;
+    text-align: left;
+  }
+  
+  section .slide #section4 .c {
+    margin: 0 auto;
+  }
+  
+  section .slide .top-s {
+    max-width: 100%;
+    width: 60%;
+    height: 350px;
+    margin: 0 auto;
+    padding: 1em 3em;
+    display: flex;
+    flex-direction: column; /* 縦に並べる */
+    justify-content: center; /* 縦方向の中央寄せ */
+  }
+  
+  section .slide .top-s p {
+    color: var(--base-color);
+  }
+  
+  section .slide .top-s a {
+    position: absolute;
+    right: 10%;
+    bottom: 10%;
+  }
+  
+  section .slide .top-s a::before {
+    content: "";
+    display: block;
+    width: 150px;
+    height: fit-content;
+    position: absolute;
+    left: 0;
+    bottom: 7px;
+    border-bottom: 1px solid var(--accent-color);
+  }
+  
+  section .slide .top-s a::after {
+    content: "";
+    display: block;
+    position: absolute;
+    right: -20%;
+    bottom: 7px;
+    width: 20px;
+    border-top: 1px solid var(--accent-color);
+    transform: rotate(30deg);
+  }
+  
+  section .slide #section3 img {
+    width: 25%;
+    right: 0;
+  }
+  
+  section .slide #section4 h3 {
+    font-size: clamp(4rem, calc(4rem + 0.5vw), 6rem);
+    font-family: liana, script;
+    font-weight: 400;
+    text-align: center;
+  }
+  
