@@ -266,9 +266,9 @@ section .top-s a::after {
 
 /*===img*/
 section #top-img {
+    width: 75%;
     top: -5%;
     right: 0;
-    width: 75%;
 }
 
 section img {
@@ -284,8 +284,8 @@ section img {
 
 .section1 img {
     width: 40%;
-    top: 55%;
-    left: 0;
+    bottom: 3%;
+    left: 3%;
     /*transform:rotate(-10deg);*/
 }
 
