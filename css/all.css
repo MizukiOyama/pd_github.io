@@ -200,8 +200,8 @@ section .top-s a::after {
     transform: rotate(30deg);
 }
 
-.slide #tab-1,
-.slide #tab-2 {
+#tab-1,
+#tab-2 {
     align-items: center;
     justify-content: center;
     flex-direction: row;
@@ -209,7 +209,8 @@ section .top-s a::after {
 }
 
 .section1 .img {
-    width: 30%;
+    content: "";
+    width: 300px;
     height: 500px;
     top: 0;
     left: 0;
@@ -223,7 +224,8 @@ section .top-s a::after {
 }
 
 .section2 .img {
-    width: 25%;
+    content: "";
+    width: 250px;
     height: 450px;
     right: 5%;
     bottom: 5%;
