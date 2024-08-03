@@ -151,11 +151,12 @@ section {
 
   section .top-s {
     max-width: 100%;
-    width: 60%;
+    width: 800px;
     height: 350px;
     margin: 0 auto;
-    padding: 1em 3em;
+    padding: 1em 3.5em;
     z-index: 1;
+    background: rgba(245, 252, 246, 0.5);
     position: relative;
     display: flex;
     flex-direction: column; /* 縦に並べる */

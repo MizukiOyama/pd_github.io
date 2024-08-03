@@ -1,9 +1,9 @@
 // ヘッダーとフッターの読み込みと初期化
 document.addEventListener("DOMContentLoaded", function () {
-    fetch("head.html")
+    fetch("header.html")
         .then(response => response.text())
         .then(headerData => {
-            document.getElementById("head-container").innerHTML = headerData;
+            document.getElementById("header-container").innerHTML = headerData;
             // メニューの初期化を再度呼び出し
             initializeMenu();
         });
