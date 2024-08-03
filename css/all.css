@@ -207,16 +207,16 @@ section .top-s a::after {
     flex-direction: row;
 }
 #tab-1 .top-s {
-    width: clamp(55%, 100%, 45%);
-    transform: translate(20%,20%);
+    width: clamp(45%, 100%, 40%);
+    transform: translate(40%,25%);
 }
 #tab-2 .top-s {
-    width: clamp(55%, 100%, 45%);
-    transform: translate(0%,-20%);
+    width: clamp(50%, 100%, 40%);
+    transform: translate(-10%,-20%);
 }
 .section1 .img {
     content: "";
-    width: clamp(55%, 100%, 45%);
+    width: clamp(50%, 100%, 45%);
     height: 400px;
     border: 5px solid var(--base-color);
     position: absolute;
