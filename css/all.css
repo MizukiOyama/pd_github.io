@@ -151,25 +151,21 @@ section {
     font-weight: 600;
   }
   
-  section .slide #section2 img,
-  section .slide #section3 img,
-  section .slide #section4 img {
+  section #section2 img,
+  section #section3 img,
+  section #section4 img {
     width: 30%;
   }
   
-  section .slide #section2 .text,
-  section .slide #section3 .text,
-  section .slide #section4 .text {
+  section #section2 .text,
+  section #section3 .text,
+  section #section4 .text {
     font-weight: 600;
     margin: 0 0 5% 0;
     text-align: left;
   }
-  
-  section .slide #section4 .c {
-    margin: 0 auto;
-  }
-  
-  section .slide .top-s {
+    
+  section .top-s {
     max-width: 100%;
     width: 60%;
     height: 350px;
@@ -180,17 +176,17 @@ section {
     justify-content: center; /* 縦方向の中央寄せ */
   }
   
-  section .slide .top-s p {
+  section .top-s p {
     color: var(--base-color);
   }
   
-  section .slide .top-s a {
+  section .top-s a {
     position: absolute;
     right: 10%;
     bottom: 10%;
   }
   
-  section .slide .top-s a::before {
+  section .top-s a::before {
     content: "";
     display: block;
     width: 150px;
@@ -201,7 +197,7 @@ section {
     border-bottom: 1px solid var(--accent-color);
   }
   
-  section .slide .top-s a::after {
+  section .top-s a::after {
     content: "";
     display: block;
     position: absolute;
@@ -212,15 +208,18 @@ section {
     transform: rotate(30deg);
   }
   
-  section .slide #section3 img {
+  section #section3 img {
     width: 25%;
     right: 0;
   }
   
-  section .slide #section4 h3 {
+  section #section4 h3 {
     font-size: clamp(4rem, calc(4rem + 0.5vw), 6rem);
     font-family: liana, script;
     font-weight: 400;
     text-align: center;
   }
   
+  section #section4 .c {
+    margin: 0 auto;
+  }
