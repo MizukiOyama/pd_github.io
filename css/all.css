@@ -205,9 +205,10 @@ section .top-s a::after {
     align-items: center;
     justify-content: center;
     flex-direction: row;
-    padding: 1em 2em;
 }
-
+section .top-s #tab-1 {
+    transform: translate(10%,50%);
+}
 .section1 .img {
     content: "";
     width: 300px;
@@ -239,10 +240,9 @@ section .top-s a::after {
 
 .section2 .img::after {
     content: "";
-    border: 5px solid var(--base-color);
-    right: 10%;
-    bottom: 10%;
-}
+    background-image: url('https://mizukioyama.github.io/pd/hp-img/2341suisai.png');
+    position: fixed;
+    }
 
 /*.section2 p {
     margin: 0 auto;
