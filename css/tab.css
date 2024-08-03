@@ -50,8 +50,6 @@
     transition: all 0.5s ease;
     font-size: clamp(1rem, calc(1rem + 0.5vw), 1.4rem);
     height: 50px;
-    border-left: 1px solid var(--base-color);
-    border-right: 1px solid var(--base-color);
     background: rgba(245, 252, 246, 0.53);
 }
 
@@ -64,11 +62,11 @@
 
 .tab-slider {
     position: absolute;
-    bottom: 0;
+    bottom: 1em;
     width: 0;
-    height: 3px;
+    height: 2px;
     border-radius: 10px;
-    background-color: var(--sub-color);
+    background-color: var(--base-color);
     transition: left 0.3s ease;
 }
 

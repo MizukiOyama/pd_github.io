@@ -163,6 +163,10 @@ section {
     justify-content: center; /* 縦方向の中央寄せ */
   }
   
+  section .top-s h2 {
+    margin-top: -2%;
+  }
+  
   section .top-s p {
     color: var(--base-color);
   }
@@ -170,7 +174,7 @@ section {
   section .top-s a {
     position: absolute;
     right: 10%;
-    bottom: 10%;
+    bottom: 3%;
   }
   
   section .top-s a::before {
