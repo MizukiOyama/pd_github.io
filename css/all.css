@@ -130,20 +130,21 @@ section {
   }
   
   section #top-img {
-    top: 3%;
+    top: 0%;
     right: 0;
+    width: 75%;
   }
   
   section .top-h1 {
     font-weight: 600;
     position: absolute;
-    top: 15%;
-    left: 10%;
+    top: 45%;
+    left: 4%;
     color: var(--base-color);
   }
   
   section .top-h1 .h1 {
-    font-size: clamp(6rem, calc(6rem + 0.5vw), 8rem);
+    font-size: clamp(6rem, calc(6rem + 0.1vw), 8rem);
     margin-left: 70%;
   }
   
@@ -151,9 +152,9 @@ section {
     font-weight: 600;
   }
   
-  section #section2 img,
-  section #section3 img,
-  section #section4 img {
+  #section2 img,
+  #section3 img,
+  #section4 img {
     width: 30%;
   }
   
@@ -209,18 +210,18 @@ section {
     transform: rotate(30deg);
   }
   
-  section #section3 img {
+  #section3 img {
     width: 25%;
     right: 0;
   }
   
-  section #section4 h3 {
+  #section4 h3 {
     font-size: clamp(4rem, calc(4rem + 0.5vw), 6rem);
     font-family: liana, script;
     font-weight: 400;
     text-align: center;
   }
 
-  section #section4 .c {
+  #section4 .c {
     margin: 0 auto;
   }
