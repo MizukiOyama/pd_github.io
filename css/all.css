@@ -210,7 +210,7 @@ section .top-s a::after {
     width: 60%;
     transform: translate(20%,20%);
 }
-#tab-1 .top-s {
+#tab-2 .top-s {
     width: 60%;
     transform: translate(0%,-20%);
 }
@@ -236,7 +236,7 @@ section .top-s a::after {
     border: 5px solid var(--base-color);
     position: absolute;
     right: 5%;
-    bottom: 5%;
+    bottom: 20%;
     z-index: 1;
     background-image: url('https://mizukioyama.github.io/pd/hp-img/2341suisai.png');
     background-attachment: fixed;
