@@ -58,7 +58,18 @@ body {
     background-attachment: fixed;*/
 }
 
-h1,h2,h3,h4,p,ul,ol,li,a,div,span,img {
+h1,
+h2,
+h3,
+h4,
+p,
+ul,
+ol,
+li,
+a,
+div,
+span,
+img {
     margin: 0;
     padding: 0;
 }
@@ -95,7 +106,10 @@ h3 {
     font-size: clamp(3rem, calc(3rem + 0.5vw), 4rem);
 }
 
-h2,h3,h4,a {
+h2,
+h3,
+h4,
+a {
     font-family: roca, sans-serif;
     font-weight: 300;
     color: var(--sub-color);
@@ -122,33 +136,33 @@ section {
     background-image: url('https://mizukioyama.github.io/pd/hp-img/section01-bg.png');
     background-size: cover;
     background-repeat: no-repeat;
-  }
-    
-  section .top-h1 {
+}
+
+section .top-h1 {
     font-weight: 600;
     position: absolute;
     top: 45%;
     left: 4%;
     color: var(--base-color);
-  }
-  
-  section .top-h1 .h1 {
+}
+
+section .top-h1 .h1 {
     font-size: clamp(6rem, calc(6rem + 0.1vw), 8rem);
     margin-left: 70%;
-  }
-  
-  section .top-h1 .caption {
+}
+
+section .top-h1 .caption {
     font-weight: 600;
     margin: 0;
-  }
-  
-  section .top-s .text {
+}
+
+section .top-s .text {
     font-weight: 600;
     margin: 0 0 5% 0;
     text-align: left;
-  }
+}
 
-  section .top-s {
+section .top-s {
     max-width: 100%;
     width: 800px;
     height: 350px;
@@ -158,25 +172,27 @@ section {
     background: rgba(245, 252, 246, 0.5);
     position: relative;
     display: flex;
-    flex-direction: column; /* 縦に並べる */
-    justify-content: center; /* 縦方向の中央寄せ */
-  }
+    flex-direction: column;
+    /* 縦に並べる */
+    justify-content: center;
+    /* 縦方向の中央寄せ */
+}
 
-  section .top-s h2 {
+section .top-s h2 {
     margin-top: -5%;
-  }
-  
-  section .top-s p {
+}
+
+section .top-s p {
     color: var(--base-color);
-  }
-  
-  section .top-s a {
+}
+
+section .top-s a {
     position: absolute;
     right: 10%;
     bottom: 3%;
-  }
-  
-  section .top-s a::before {
+}
+
+section .top-s a::before {
     content: "";
     display: block;
     width: 150px;
@@ -185,9 +201,9 @@ section {
     left: 0;
     bottom: 7px;
     border-bottom: 1px solid var(--accent-color);
-  }
-  
-  section .top-s a::after {
+}
+
+section .top-s a::after {
     content: "";
     display: block;
     position: absolute;
@@ -196,49 +212,59 @@ section {
     width: 20px;
     border-top: 1px solid var(--accent-color);
     transform: rotate(30deg);
-  }
-    
-  #section4 h3 {
+}
+
+#section2 p {
+    margin: 0 auto;
+    padding: 1em;
+    border: 1px solid var(--base-color);
+    display: flex;
+    justify-content: center;
+    /* 縦方向の中央寄せ */
+    align-items: center;
+}
+
+#section4 h3 {
     font-size: clamp(4rem, calc(4rem + 0.5vw), 6rem);
     font-family: liana, script;
     font-weight: 400;
     text-align: center;
-  }
+}
 
-  #section4 .c {
+#section4 .c {
     margin: 0 auto;
-  }
+}
 
 
-  /*===img*/
-  section #top-img {
+/*===img*/
+section #top-img {
     top: -5%;
     right: 0;
     width: 75%;
-  }
+}
 
-  section img {
+section img {
     position: absolute;
-  }
+}
 
-  .section1 img,
-  .section2 img,
-  .section3 img,
-  .section4 img {
+.section1 img,
+.section2 img,
+.section3 img,
+.section4 img {
     width: 30%;
-  }
+}
 
-  .section1 img {
-      top: 5%;
-      left: 0;
-  }
+.section1 img {
+    top: 5%;
+    left: 0;
+}
 
-  .section2 img {
-      top: 10%;
-      right: 5%;
-  }
+.section2 img {
+    top: 10%;
+    right: 5%;
+}
 
-  .section3 img {
+.section3 img {
     width: 25%;
     right: 0;
-  }
+}
