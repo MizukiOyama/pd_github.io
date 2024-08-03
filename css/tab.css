@@ -30,6 +30,7 @@
     height: 60px;
     margin: 0 auto;
     padding: 1em 0;
+    border-bottom: 1px var(--base-color);
     box-shadow: 0 0px 1px 4px rgba(46, 46, 46, 0.15);
     z-index: 10;
 }
@@ -62,11 +63,11 @@
 
 .tab-slider {
     position: absolute;
-    bottom: 1em;
+    bottom: 0;
     width: 0;
     height: 2px;
     border-radius: 10px;
-    background-color: var(--base-color);
+    background-color: var(--white-color);
     transition: left 0.3s ease;
 }
 

@@ -56,8 +56,8 @@ nav {
 .toggle_btn {
     display: block;
     position: absolute;
-    top: 4.5%;
-    right: 5%;
+    top: 0.75%;
+    right: 6.5%;
     width: 40px;
     height: 30px;
     transition: all 1.3s;

@@ -102,10 +102,9 @@ h2,h3,h4,a {
 }
 
 p {
-    font-size: clamp(1rem, calc(1rem + 0.5vw), 1.2rem);
+    font-size: clamp(1.2rem, calc(1.2rem + 0.5vw), 1.4rem);
     width: fit-content;
     margin: 0 auto;
-    word-break: keep-all;
 }
 
 a {
@@ -162,9 +161,9 @@ section {
     flex-direction: column; /* 縦に並べる */
     justify-content: center; /* 縦方向の中央寄せ */
   }
-  
+
   section .top-s h2 {
-    margin-top: -2%;
+    margin-top: -5%;
   }
   
   section .top-s p {

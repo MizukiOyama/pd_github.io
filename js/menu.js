@@ -1,4 +1,3 @@
-// menu.jsの内容
 console.log('Menu cursor');
 
 document.addEventListener("DOMContentLoaded", function() {
