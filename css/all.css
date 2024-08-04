@@ -233,8 +233,7 @@ section .top-s a::after {
 #tab-5 .top-s {
     transform: translate(40%,25%);
 }
-#tab-2 .top-s,
-#tab-4 .top-s {
+#tab-2 .top-s {
     transform: translate(-40%,25%);
 }
 .section1 .img,
@@ -249,10 +248,12 @@ section .top-s a::after {
     z-index: 1;
     background-image: url('https://mizukioyama.github.io/pd/hp-img/overall.png');
     background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
     box-shadow: inset 0 0 10px 0 var(--base-color);
 }
 .section3 .img {
-    width: clamp(700px, 100%, 400px);
+    width: clamp(700px, 100%, 600px);
     height: 500px;
     background-image: url('https://mizukioyama.github.io/pd/hp-img/skill01.png');
 }
@@ -260,7 +261,7 @@ section .top-s a::after {
 .section2 .img,
 .section4 .img {
     content: "";
-    width: clamp(600px, 100%, 400px);
+    width: clamp(650px, 100%, 500px);
     height: 450px;
     border: 5px solid var(--base-color);
     position: absolute;
@@ -269,6 +270,8 @@ section .top-s a::after {
     z-index: 1;
     background-image: url('https://mizukioyama.github.io/pd/hp-img/ai-service01.png');
     background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
     box-shadow: inset 0 0 10px 0 var(--base-color);
 }
 .section4 .img {
