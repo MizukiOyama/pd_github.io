@@ -36,9 +36,12 @@
     a {
         font-family: liana, script;
         font-weight: 500;
-        font-size: clamp(1.4rem, calc(1.4rem + 0.5vw), 1.8rem);
+        font-size: clamp(1.4rem, calc(1.4rem + 0.1vw), 1.8rem);
         color: var(--base-color);
         padding: 0.25em 0.5em;
+        span {
+            font-size: clamp(1.2rem, calc(1.2rem + 0.1vw), 1.6rem);
+        }
     }
 }
 
@@ -155,17 +158,20 @@ a::after {
     transform: rotate(30deg);
 }
 
-section .top-s .note a,
-form a {
+head a,
+footer a,
+section .top-s .note a {
     position: relative;
     right: 0;
     margin: 0;
 }
 
+head a::after,
+head a::before,
+footer a::after,
+footer a::before,
 section .top-s .note a::after,
-section .top-s .note a::before,
-form a::after,
-form a::before {
+section .top-s .note a::before {
     display: none;
 }
 section .top-s .note a:hover {
