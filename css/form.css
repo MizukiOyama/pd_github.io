@@ -51,8 +51,7 @@
     width: 100%;
     height: 50px;
     border-width: 0 0 2px 0;
-    background-color: none;
-    line-height: 1rem;
+    background-color: rgba(0, 0, 0, 0);
 }
 .contact-form .input-text:focus {
     outline: none;
@@ -60,13 +59,13 @@
 
 .contact-form .input-text:focus + .label,
 .contact-form .input-text.not-empty + .label {
-    transform: translateY(-2rem);
+    transform: translateY(-3.5rem);
 }
 
 .contact-form .label {
     font-size: clamp(1rem, calc(1rem + 0.5vw), 1.2rem);
     font-weight: 400;
-    font-family: Lusitana, serif;
+    color: var(--sub-color);
     position: absolute;
     left: 10%;
     bottom: 1%;
@@ -75,32 +74,28 @@
     transition: transform .2s ease-in-out;
 }
 
-.contact-form .label:nth-child(3) {
+.contact-form .label-test {
     left: 5%;
 }
 
 .contact-form .submit-btn {
+    font-family: zen-maru-gothic, sans-serif;
+    font-size: clamp(1.2rem, calc(1.2rem + 0.5vw), 1.4rem);
     display: inline-block;
     background-color: var(--base-color);
     color: var(--white-color);
-    font-family: Raleway, sans-serif;
     text-transform: uppercase;
     letter-spacing: 0.2rem;
-    font-size: clamp(0.9rem, calc(0.9rem + 0.5vw), 1rem);
     line-height: 1.5rem;
     padding: 0.5rem 1rem;
     border: none;
     cursor: pointer;
 }
 .note {
+    font-size: clamp(1rem, calc(1rem + 0.5vw), 1.2rem);
+    width: 100%;
     position: absolute;
     left: 0;
-    bottom: 10px;
-    width: 100%;
-    text-align: center;
-    font-family: Lusitana, serif;
-    font-size: 16px;
-    line-height: 21px;
 }
 .note .link {
     color: #888;
