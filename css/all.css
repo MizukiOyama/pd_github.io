@@ -130,7 +130,11 @@ section {
     background-image: url('https://mizukioyama.github.io/pd/hp-img/section01-bg.png');
     background-size: cover;
     background-repeat: no-repeat;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
 }
+
 
 /*==h1 top*/
 section .top-h1 {
@@ -152,15 +156,6 @@ section .top-h1 .caption {
 }
 /*==h1 top*/
 
-/*==section in-box */
-section .box {
-    position: relative;
-    width: 1200px;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-}
-
 /*==section p*/
 section .top-s .text {
     font-weight: 600;
@@ -170,7 +165,7 @@ section .top-s .text {
 
 section .top-s {
     max-width: 100%;
-    width: 1000px;
+    width: clamp(750px, 100%, 550px);
     height: 450px;
     margin: 0 auto;
     padding: 1em 3.5em;
@@ -220,22 +215,16 @@ section .top-s a::after {
     transform: rotate(30deg);
 }
 
-#tab-1,
-#tab-2,
-#tab-3,
-#tab-4,
-#tab-5 {
+
+/*==section in-box */
+section .box {
+    position: relative;
+    width: 1200px;
+    height: 100vh;
+    display: flex;
     align-items: center;
-    justify-content: center;
-    flex-direction: row;
 }
-#tab-1 .top-s,
-#tab-2 .top-s,
-#tab-3 .top-s,
-#tab-4 .top-s,
-#tab-5 .top-s {
-    width: clamp(750px, 100%, 550px);
-}
+
 #tab-1 .top-s,
 #tab-3 .top-s,
 #tab-5 .top-s {
