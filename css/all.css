@@ -148,7 +148,8 @@ section .top-h1 .caption {
 section .box {
     position: relative;
     width: 1200px;
-    height: auto;
+    height: 100vh;
+    display: flex;
     justify-self: space-around;
 }
 
