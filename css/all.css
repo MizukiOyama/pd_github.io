@@ -256,8 +256,11 @@ section .box {
     height: 500px;
     background-image: url('https://mizukioyama.github.io/pd/hp-img/skill02.png');
 }
-.section3 .img:nth-child(3) {
-    background-image: url('https://mizukioyama.github.io/pd/hp-img/skill02.png');
+.section3 .img:nth-child(4) {
+    width: clamp(700px, 100%, 600px);
+    height: 500px;
+    bottom: 5%;
+    background-image: url('https://mizukioyama.github.io/pd/hp-img/wave01-suisai.png');
 }
 
 .section2 .img,

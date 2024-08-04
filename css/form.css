@@ -1,5 +1,6 @@
 
 .align-center {
+    margin: 0 auto;
     text-align: center;
 }
 .row::after {
@@ -96,10 +97,6 @@
     width: 100%;
     position: absolute;
     left: 0;
-}
-.note .link {
-    color: #888;
-    text-decoration: none;
 }
 .note .link:hover {
     text-decoration: underline;
