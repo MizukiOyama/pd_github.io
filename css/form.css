@@ -57,9 +57,12 @@
 .contact-form .input-text:focus {
     outline: none;
 }
-.contact-form .label:focus {
+
+.contact-form .input-text:focus + .label,
+.contact-form .input-text.not-empty + .label {
     transform: translateY(-2rem);
 }
+
 .contact-form .label {
     font-size: clamp(1rem, calc(1rem + 0.5vw), 1.2rem);
     font-weight: 400;
@@ -71,9 +74,11 @@
     cursor: text;
     transition: transform .2s ease-in-out;
 }
-.contact-form .label:last-child {
+
+.contact-form .label:nth-child(3) {
     left: 5%;
 }
+
 .contact-form .submit-btn {
     display: inline-block;
     background-color: var(--base-color);
