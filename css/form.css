@@ -1,13 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Raleway:300);
-@import url(https://fonts.googleapis.com/css?family=Lusitana:400,700);
 
-html {
-    height: 100%;
-}
-body {
-    height: 100%;
-    position: relative;
-}
 .align-center {
     text-align: center;
 }
