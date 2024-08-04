@@ -31,13 +31,10 @@
     }
 
     .foot {
-        font-size: clamp(0.9rem, calc(0.9rem + 0.5vw), 0.95rem);
-        width: 100%;
-        color: var(--main-color);
-        background: var(--base-color);
+        font-size: clamp(1rem, calc(1rem + 0.5vw), 1.2rem);
         text-align: right;
         position: absolute;
-        padding: 0.25em 3em;
+        padding: 0.25em 2em;
         bottom: 0%;
         right: 0%;
     }
