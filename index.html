@@ -12,6 +12,7 @@
   <link rel="stylesheet" href="css/menu.css">
   <link rel="stylesheet" href="css/footer.css">
   <link rel="stylesheet" href="css/glitch.css">
+  <link rel="stylesheet" href="css/form.css">
   <link rel="stylesheet" href="css/tab.css">
   <!--h1-->
   <link rel="stylesheet" href="https://use.typekit.net/gjh0htb.css">
@@ -37,6 +38,7 @@
   <script src="js/menu.js"></script>
   <script src="js/cursor.js"></script>
   <script src="js/template-head.js"></script>
+  <script src="js/form.js"></script>
   <script src="js/tab.js"></script>
 
 
@@ -141,7 +143,44 @@
         <div class="top-s">
           <h3>Contact</h3>
           <p class="text">問合せ、申込</p>
+          <form id="contactForm" action="https://script.google.com/macros/s/AKfycbwY5HlNUPRivdlSZcN_5XmvvkmBxZ4PrYeag_85nGW2grZsaWbxLJoiXc6C7Aqn8HOI/exec" method="POST">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <br>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+            <br>
+            <button type="submit">Send</button>
+        </form>
         </div>
+        <div class="content-wrapper">
+          <div class="get-in-touch">
+              <h1 class="title">Contact Us</h1>
+              <form id="contactForm" class="contact-form row" action="https://script.google.com/macros/s/AKfycbwY5HlNUPRivdlSZcN_5XmvvkmBxZ4PrYeag_85nGW2grZsaWbxLJoiXc6C7Aqn8HOI/exec" method="POST">
+                  <div class="form-field col x-100">
+                      <input type="text" id="name" name="name" class="input-text" required>
+                      <label for="name" class="label">Name</label>
+                  </div>
+                  <div class="form-field col x-100">
+                      <input type="email" id="email" name="email" class="input-text" required>
+                      <label for="email" class="label">Email</label>
+                  </div>
+                  <div class="form-field col x-100">
+                      <textarea id="message" name="message" class="input-text" required></textarea>
+                      <label for="message" class="label">Message</label>
+                  </div>
+                  <div class="form-field col x-100 align-center">
+                      <button type="submit" class="submit-btn">Send</button>
+                  </div>
+              </form>
+              <div class="note">
+                  <p>For more information, visit our <a href="#" class="link">site policy</a>.</p>
+              </div>
+          </div>
+      </div>
       </div>
     </section>
 

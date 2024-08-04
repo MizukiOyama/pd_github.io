@@ -106,6 +106,14 @@ p {
     width: fit-content;
     margin: 0 auto;
 }
+ol,ul {
+    font-size: clamp(1.6rem, calc(1.6rem + 0.5vw), 1.8rem);
+    color: var(--base-color);
+}
+
+li {
+    list-style: none;
+}
 
 a {
     font-size: clamp(1.2rem, calc(1.2rem + 0.5vw), 1.6rem);
@@ -256,7 +264,7 @@ section .top-s a::after {
 .section3 .img {
     width: clamp(700px, 100%, 600px);
     height: 500px;
-    background-image: url('https://mizukioyama.github.io/pd/hp-img/skill01.png');
+    background-image: url('https://mizukioyama.github.io/pd/hp-img/skill02.png');
 }
 
 .section2 .img,
@@ -318,11 +326,11 @@ section img {
 .section2 img,
 .section3 img,
 .section4 img {
-    width: 30%;
+    width: 35%;
 }
 
 .section1 img {
-    width: 40%;
+    width: 30%;
     bottom: 3%;
     left: 3%;
     /*transform:rotate(-10deg);*/
