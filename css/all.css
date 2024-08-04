@@ -107,7 +107,7 @@ p {
     margin: 0 auto;
 }
 ol,ul {
-    font-size: clamp(1.6rem, calc(1.6rem + 0.5vw), 1.8rem);
+    font-size: clamp(1.4rem, calc(1.4rem + 0.5vw), 1.6rem);
     color: var(--base-color);
 }
 
