@@ -92,15 +92,7 @@
     cursor: pointer;
 }
 .note {
-    font-size: clamp(1rem, calc(1rem + 0.5vw), 1.2rem);
     width: 100%;
     position: absolute;
     left: 0;
-}
-.note .link a {
-    position: relative;
-    margin: 0;
-}
-.note .link:hover {
-    text-decoration: underline;
 }

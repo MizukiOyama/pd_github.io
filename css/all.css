@@ -115,12 +115,58 @@ li {
     list-style: none;
 }
 
+/*==リンク*/
 a {
     font-size: clamp(1.2rem, calc(1.2rem + 0.5vw), 1.6rem);
     color: var(--accent-color);
     width: fit-content;
     text-decoration: none;
     padding: 0.25em 0.5em;
+    position: absolute;
+    right: 10%;
+    bottom: 3%;
+}
+a:hover {
+    color: var(--sub-color);
+}
+a::before:hover {
+    width: 200px;
+}
+
+a::before {
+    content: "";
+    display: block;
+    width: 150px;
+    height: fit-content;
+    position: absolute;
+    left: 0;
+    bottom: 7px;
+    border-bottom: 1px solid var(--accent-color);
+}
+
+a::after {
+    content: "";
+    display: block;
+    position: absolute;
+    right: -20%;
+    bottom: 7px;
+    width: 20px;
+    border-top: 1px solid var(--accent-color);
+    transform: rotate(30deg);
+}
+
+section .top-s .note a {
+    position: relative;
+    right: 0;
+    margin: 0;
+}
+
+section .top-s .note a::after,
+section .top-s .note a::before {
+    display: none;
+}
+section .top-s .note a:hover {
+    text-decoration: underline;
 }
 
 section {
@@ -187,35 +233,6 @@ section .top-s p {
     color: var(--base-color);
 }
 
-section .top-s a {
-    position: absolute;
-    right: 10%;
-    bottom: 3%;
-}
-
-section .top-s a::before {
-    content: "";
-    display: block;
-    width: 150px;
-    height: fit-content;
-    position: absolute;
-    left: 0;
-    bottom: 7px;
-    border-bottom: 1px solid var(--accent-color);
-}
-
-section .top-s a::after {
-    content: "";
-    display: block;
-    position: absolute;
-    right: -20%;
-    bottom: 7px;
-    width: 20px;
-    border-top: 1px solid var(--accent-color);
-    transform: rotate(30deg);
-}
-
-
 /*==section in-box */
 section .box {
     position: relative;
@@ -255,14 +272,6 @@ section .box {
     width: clamp(700px, 100%, 600px);
     height: 500px;
     background-image: url('https://mizukioyama.github.io/pd/hp-img/skill02.png');
-}
-.section3 .img-2 {
-    width: clamp(700px, 100%, 600px);
-    height: 500px;
-    position: absolute;
-    left: 0;
-    bottom: 5%;
-    background-image: url('https://mizukioyama.github.io/pd/hp-img/wave01-suisai.png');
 }
 
 .section2 .img,
