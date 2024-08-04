@@ -1,6 +1,6 @@
 
 .align-center {
-    margin: 0 auto;
+    margin-top: 2.5rem;
     text-align: center;
 }
 .col {
@@ -74,13 +74,16 @@
 .contact-form .submit-btn {
     font-family: zen-maru-gothic, sans-serif;
     font-size: clamp(1.2rem, calc(1.2rem + 0.5vw), 1.4rem);
+    width: 60pt;
+    height: 35pt;
     display: inline-block;
     background-color: var(--base-color);
     color: var(--white-color);
     text-transform: uppercase;
     letter-spacing: 0.2rem;
     line-height: 1.5rem;
-    padding: 0.5rem 1rem;
+    padding: 0.35rem 0.8rem 0.5rem 1rem;
+    margin: 30% auto;
     border: none;
     cursor: pointer;
 }
@@ -88,4 +91,5 @@
     width: 100%;
     position: absolute;
     left: 0;
+    bottom: 0;
 }

@@ -59,13 +59,13 @@
     transition: all 0.5s ease;
 }
 
-.tabs-container--top a {
+.tabs-container a {
     position: relative;
     right: 0;
     bottom: 0;
 }
-.tabs-container--top a::after,
-.tabs-container--top a::before {
+.tabs-container a::after,
+.tabs-container a::before {
     display: none;
 }
 
