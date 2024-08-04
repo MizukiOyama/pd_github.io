@@ -53,7 +53,15 @@
     letter-spacing: 0.1rem;
     transition: all 0.5s ease;
 }
-
+.tab a {
+    position: relative;
+    right: 0;
+    bottom: 0;
+}
+.tab a::after,
+.tab a::before {
+    display: none;
+}
 
 .tab:hover {
     color: var(--white-color);
