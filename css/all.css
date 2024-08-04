@@ -150,7 +150,8 @@ section .box {
     width: 1200px;
     height: 100vh;
     display: flex;
-    justify-self: space-around;
+    align-items: center;
+    justify-content: space-between;
 }
 
 /*==section p*/
