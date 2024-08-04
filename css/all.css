@@ -149,6 +149,7 @@ section .box {
     position: relative;
     width: 1200px;
     height: auto;
+    justify-self: space-around;
 }
 
 /*==section p*/
