@@ -39,10 +39,12 @@
         font-size: clamp(1.4rem, calc(1.4rem + 0.1vw), 1.8rem);
         color: var(--base-color);
         padding: 0.25em 0.5em;
+
         span {
             font-size: clamp(1.2rem, calc(1.2rem + 0.1vw), 1.6rem);
         }
     }
+
 }
 
 body {
@@ -61,7 +63,18 @@ body {
     background-attachment: fixed;*/
 }
 
-h1,h2,h3,h4,p,ul,ol,li,a,div,span,img {
+h1,
+h2,
+h3,
+h4,
+p,
+ul,
+ol,
+li,
+a,
+div,
+span,
+img {
     margin: 0;
     padding: 0;
 }
@@ -98,7 +111,10 @@ h3 {
     font-size: clamp(3rem, calc(3rem + 0.5vw), 4rem);
 }
 
-h2,h3,h4,a {
+h2,
+h3,
+h4,
+a {
     font-family: roca, sans-serif;
     font-weight: 300;
     color: var(--sub-color);
@@ -109,7 +125,9 @@ p {
     width: fit-content;
     margin: 0 auto;
 }
-ol,ul {
+
+ol,
+ul {
     font-size: clamp(1.4rem, calc(1.4rem + 0.5vw), 1.6rem);
     color: var(--base-color);
 }
@@ -129,9 +147,11 @@ a {
     right: 10%;
     bottom: 3%;
 }
+
 a:hover {
     color: var(--sub-color);
 }
+
 a::before:hover {
     width: 200px;
 }
@@ -158,7 +178,7 @@ a::after {
     transform: rotate(30deg);
 }
 
-head a,
+.head a,
 footer a,
 section .top-s .note a {
     position: relative;
@@ -166,14 +186,15 @@ section .top-s .note a {
     margin: 0;
 }
 
-head a::after,
-head a::before,
+.head a::after,
+.head a::before,
 footer a::after,
 footer a::before,
 section .top-s .note a::after,
 section .top-s .note a::before {
     display: none;
 }
+
 section .top-s .note a:hover {
     text-decoration: underline;
 }
@@ -209,6 +230,7 @@ section .top-h1 .caption {
     font-weight: 600;
     margin: 0;
 }
+
 /*==h1 top*/
 
 /*==section p*/
@@ -254,11 +276,13 @@ section .box {
 #tab-1 .top-s,
 #tab-3 .top-s,
 #tab-5 .top-s {
-    transform: translate(40%,25%);
+    transform: translate(40%, 25%);
 }
+
 #tab-2 .top-s {
-    transform: translate(-40%,25%);
+    transform: translate(-40%, 25%);
 }
+
 .section1 .img,
 .section3 .img {
     content: "";
@@ -277,6 +301,7 @@ section .box {
     box-shadow: inset 0 0 10px 0 var(--base-color);
     mix-blend-mode: color-burn;
 }
+
 .section3 .img {
     width: clamp(700px, 100%, 600px);
     height: 500px;
@@ -300,6 +325,7 @@ section .box {
     box-shadow: inset 0 0 10px 0 var(--base-color);
     mix-blend-mode: color-burn;
 }
+
 .section4 .img {
     width: clamp(600px, 100%, 400px);
     height: 450px;
@@ -320,6 +346,7 @@ section .box {
     justify-content: center;
     align-items: center;
 }
+
 .section4 h3 {
     font-size: clamp(4rem, calc(4rem + 0.5vw), 6rem);
     font-family: liana, script;
