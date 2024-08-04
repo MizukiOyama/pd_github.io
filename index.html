@@ -38,6 +38,7 @@
   <script src="js/menu.js"></script>
   <script src="js/cursor.js"></script>
   <script src="js/template-head.js"></script>
+  <script src="js/form.js"></script>
   <script src="js/tab.js"></script>
 
 
@@ -201,23 +202,6 @@
           }
         }).catch(error => {
           alert('There was a problem with the submission.');
-        });
-      });
-
-      // フォーカスとブラーイベントの処理
-      document.querySelectorAll('.input-text').forEach(input => {
-        input.addEventListener('blur', function () {
-          if (input.value.trim() !== '') {
-            input.classList.add('not-empty');
-          } else {
-            input.classList.remove('not-empty');
-          }
-        });
-
-        input.addEventListener('focus', function () {
-          if (input.value.trim() !== '') {
-            input.classList.add('not-empty');
-          }
         });
       });
     });

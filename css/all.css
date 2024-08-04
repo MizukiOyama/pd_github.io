@@ -155,14 +155,17 @@ a::after {
     transform: rotate(30deg);
 }
 
-section .top-s .note a {
+section .top-s .note a,
+form a {
     position: relative;
     right: 0;
     margin: 0;
 }
 
 section .top-s .note a::after,
-section .top-s .note a::before {
+section .top-s .note a::before,
+form a::after,
+form a::before {
     display: none;
 }
 section .top-s .note a:hover {

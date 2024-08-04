@@ -1,29 +1,22 @@
-document.getElementById('contactForm').addEventListener('submit', function(e) {
-    e.preventDefault();
-    var form = e.target;
-    var formData = new FormData(form);
-    fetch(form.action, {
-        method: 'POST',
-        body: formData
-    }).then(response => {
-        if (response.ok) {
-            alert('Your message has been sent!');
-            form.reset();
+document.addEventListener("DOMContentLoaded", function () {
+    const inputs = document.querySelectorAll(".input-text");
+  
+    inputs.forEach(input => {
+      // 初期チェック
+      toggleLabel(input);
+  
+      // 入力イベントに応じてクラスを切り替え
+      input.addEventListener("input", function () {
+        toggleLabel(input);
+      });
+  
+      function toggleLabel(input) {
+        if (input.value !== "") {
+          input.classList.add("not-empty");
         } else {
-            alert('There was a problem with the submission.');
+          input.classList.remove("not-empty");
         }
-    }).catch(error => {
-        alert('There was a problem with the submission.');
+      }
     });
-});
-
-document.querySelectorAll('.input-text').forEach(input => {
-    input.addEventListener('focus', function() {
-        this.classList.add('not-empty');
-    });
-    input.addEventListener('blur', function() {
-        if (this.value === '') {
-            this.classList.remove('not-empty');
-        }
-    });
-});
+  });
+  
