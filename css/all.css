@@ -1,7 +1,7 @@
 :root {
     /* メインカラー */
     --main-color: #D6E4DA;
-    /* サブカラー */
+    /* サブカラー rgba(0, 58, 66)*/
     --sub-color: #003A42;
     /* ベースカラー */
     --base-color: #2E2E2E;
@@ -256,9 +256,11 @@ section .box {
     height: 500px;
     background-image: url('https://mizukioyama.github.io/pd/hp-img/skill02.png');
 }
-.section3 .img:nth-child(4) {
+.section3 .img-2 {
     width: clamp(700px, 100%, 600px);
     height: 500px;
+    position: absolute;
+    left: 0;
     bottom: 5%;
     background-image: url('https://mizukioyama.github.io/pd/hp-img/wave01-suisai.png');
 }
@@ -294,6 +296,9 @@ section .box {
     justify-content: center;
 }*/
 
+.section4 .top-s {
+    width: clamp(800px, 100%, 650px);
+}
 .section4 h3 {
     font-size: clamp(4rem, calc(4rem + 0.5vw), 6rem);
     font-family: liana, script;

@@ -64,15 +64,14 @@
 }
 
 .contact-form .label {
-    font-size: clamp(1rem, calc(1rem + 0.5vw), 1.2rem);
+    font-size: clamp(1.4rem, calc(1.4rem + 0.1vw), 1.8rem);
     font-weight: 400;
-    color: var(--sub-color);
+    color: rgba(0, 58, 66, 0.5);
     position: absolute;
     left: 10%;
-    bottom: 1%;
+    bottom: 10%;
     line-height: 1.5rem;
-    cursor: text;
-    transition: transform .2s ease-in-out;
+    transition: transform 0.3s ease-in-out;
 }
 
 .contact-form .label-test {
@@ -97,6 +96,10 @@
     width: 100%;
     position: absolute;
     left: 0;
+}
+.note .link a {
+    position: relative;
+    margin: 0;
 }
 .note .link:hover {
     text-decoration: underline;
