@@ -125,6 +125,7 @@ a {
     position: absolute;
     right: 10%;
     bottom: 3%;
+    transition: all 0.3s ease;
 }
 
 a:hover {
