@@ -44,17 +44,21 @@ document.addEventListener("DOMContentLoaded", function() {
         var $mask = document.getElementById('mask');
         var open = 'open';
 
-        $btn.addEventListener('click', function() {
-            if (!$nav.classList.contains(open)) {
-                $nav.classList.add(open);
-            } else {
-                $nav.classList.remove(open);
-            }
-        });
+        if ($btn && $mask) {
+            $btn.addEventListener('click', function() {
+                if (!$nav.classList.contains(open)) {
+                    $nav.classList.add(open);
+                } else {
+                    $nav.classList.remove(open);
+                }
+            });
 
-        $mask.addEventListener('click', function() {
-            $nav.classList.remove(open);
-        });
+            $mask.addEventListener('click', function() {
+                $nav.classList.remove(open);
+            });
+        } else {
+            console.error('Menu button or mask not found');
+        }
     }
 
     // メニューの初期化
