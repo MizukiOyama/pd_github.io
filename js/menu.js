@@ -39,23 +39,21 @@ document.addEventListener("DOMContentLoaded", function() {
 
     // メニューの初期化関数
     function initializeMenu() {
-        jQuery(document).ready(function($) {
-            var $nav = $('#navArea');
-            var $btn = $('.toggle_btn');
-            var $mask = $('#mask');
-            var open = 'open';
+        var $nav = document.getElementById('navArea');
+        var $btn = document.querySelector('.toggle_btn');
+        var $mask = document.getElementById('mask');
+        var open = 'open';
 
-            $btn.on('click', function() {
-                if (!$nav.hasClass(open)) {
-                    $nav.addClass(open);
-                } else {
-                    $nav.removeClass(open);
-                }
-            });
+        $btn.addEventListener('click', function() {
+            if (!$nav.classList.contains(open)) {
+                $nav.classList.add(open);
+            } else {
+                $nav.classList.remove(open);
+            }
+        });
 
-            $mask.on('click', function() {
-                $nav.removeClass(open);
-            });
+        $mask.addEventListener('click', function() {
+            $nav.classList.remove(open);
         });
     }
 
