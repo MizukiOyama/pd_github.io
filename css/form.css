@@ -22,7 +22,7 @@ input:-webkit-autofill:focus {
 }
 
 .content-wrapper {
-    min-height: 80%;
+    min-height: 75%;
     position: relative;
 }
 .get-in-touch {
@@ -103,5 +103,5 @@ input:-webkit-autofill:focus {
     width: 100%;
     position: absolute;
     left: 0;
-    bottom: 5%;
+    bottom: 0;
 }
