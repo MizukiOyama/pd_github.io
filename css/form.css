@@ -1,5 +1,5 @@
 .col {
-    padding: 0 2.5rem;
+    padding: 0 1.5rem;
     float: left;
     box-sizing: border-box;
 }
@@ -86,7 +86,7 @@ input:-webkit-autofill:focus {
 .contact-form .submit-btn {
     font-family: zen-maru-gothic, sans-serif;
     font-size: clamp(1.2rem, calc(1.2rem + 0.5vw), 1.4rem);
-    width: 60pt;
+    width: 70pt;
     height: 35pt;
     display: inline-block;
     background-color: var(--base-color);
@@ -94,7 +94,7 @@ input:-webkit-autofill:focus {
     text-transform: uppercase;
     letter-spacing: 0.2rem;
     line-height: 1.5rem;
-    padding: 0.35rem 0.8rem 0.5rem 1rem;
+    padding: 0.35rem 0.8rem 0.5rem 1.2rem;
     margin: 0% auto;
     border: none;
     cursor: pointer;
@@ -107,12 +107,7 @@ input:-webkit-autofill:focus {
 }
 
 .note {
-    width: 100%;
-    position: relative;
-    left: 0;
-    bottom: 0;
-    margin-left: -10%;
-    z-index: -1;
+    margin-left: -25%;
 }
 
 
