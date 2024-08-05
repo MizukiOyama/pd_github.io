@@ -6,7 +6,7 @@
 
 .col.x-50 {
     width: 50%;
-    margin-top: 2.5rem;
+    margin-top: 2rem;
 }
 
 .col.x-100 {
@@ -25,7 +25,6 @@ input:-webkit-autofill:focus {
 }
 
 .content-wrapper {
-    min-height: 75%;
     position: relative;
 }
 
@@ -36,11 +35,11 @@ input:-webkit-autofill:focus {
 }
 
 .get-in-touch .c-h3 {
-    text-align: center;
+    font-size: clamp(1.8rem, calc(1.8rem + 0.5vw), 2rem);
     font-family: Raleway, sans-serif;
+    text-align: center;
     text-transform: uppercase;
     letter-spacing: 1rem;
-    font-size: clamp(1.8rem, calc(1.8rem + 0.5vw), 2rem);
     line-height: 4rem;
     padding-bottom: 2rem;
 }
@@ -111,7 +110,8 @@ input:-webkit-autofill:focus {
     width: 100%;
     position: relative;
     left: 0;
-    bottom: -25px;
+    bottom: 0;
+    margin-left: -10%;
     z-index: -1;
 }
 

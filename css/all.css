@@ -278,6 +278,7 @@ section .box {
     height: 600px;
     padding: 2em 4.5em;
     align-items: center;
+    background: repeating-linear-gradient(-215deg, rgba(0, 58, 66, 0.8), rgba(0, 58, 66, 0.55) 1px, rgba(0, 58, 66, 0.8) 0, rgba(0, 58, 66, 0.55) 20px);
 }
 .section4 .top-s::before {
     content: "";
@@ -295,7 +296,7 @@ section .box {
     font-size: clamp(4rem, calc(4rem + 0.5vw), 6rem);
     font-family: liana, script;
     font-weight: 400;
-    text-align: center;
+    line-height: 4.5rem;
 }
 
 #tab-4 .top-s .text {
@@ -361,7 +362,7 @@ section img {
     content: "";
     width: clamp(700px, 100%, 400px);
     height: 500px;
-    border: 5px solid var(--base-color);
+    border: 3px solid var(--base-color);
     position: absolute;
     top: 15%;
     left: -10%;
@@ -370,7 +371,7 @@ section img {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    box-shadow: inset 0 0 10px 0 var(--base-color);
+    /*box-shadow: inset 0 0 10px 0 var(--base-color);*/
     mix-blend-mode: color-burn;
     border-radius: 30px;
 }
@@ -386,7 +387,7 @@ section img {
     content: "";
     width: clamp(650px, 100%, 500px);
     height: 450px;
-    border: 5px solid var(--base-color);
+    border: 3px solid var(--base-color);
     position: absolute;
     right: -8%;
     top: 20%;
@@ -394,7 +395,6 @@ section img {
     background-image: url('https://mizukioyama.github.io/pd/hp-img/ai-service01.png');
     background-size: cover;
     background-repeat: no-repeat;
-    box-shadow: inset 0 0 10px 0 var(--base-color);
     mix-blend-mode: color-burn;
     border-radius: 30px;
 }
