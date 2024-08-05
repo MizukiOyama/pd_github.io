@@ -202,18 +202,17 @@
       // フォームデータをサーバーに送信
       fetch(form.action, {
         method: 'POST',
-        body: formData
+        body: formData,
+        mode: 'no-cors'
       }).then(response => {
-        if (response.ok) {
-          submitted = true;
-          showThankYouMessage(); // サンクスメッセージを表示
-          form.reset(); // フォームをリセット
-          document.querySelectorAll('.input-text').forEach(input => {
-            input.classList.remove('not-empty'); // クラスをリセット
-          });
-        } else {
-          alert('There was a problem with the submission.');
-        }
+        // ここではレスポンスを処理できないため、成功として扱う
+        alert('Your message has been sent!');
+        submitted = true;
+        showThankYouMessage(); // サンクスメッセージを表示
+        form.reset(); // フォームをリセット
+        document.querySelectorAll('.input-text').forEach(input => {
+          input.classList.remove('not-empty'); // クラスをリセット
+        });
       }).catch(error => {
         console.error('Error:', error);
         alert('There was a problem with the submission.');
