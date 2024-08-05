@@ -149,7 +149,7 @@
             <div class="get-in-touch">
               <!--<h3 class="c-h3">Contact Us</h3>-->
               
-              <form id="contactForm" class="contact-form" action="https://script.google.com/macros/s/AKfycbx0x7x1McI0UX_Jx2JvuDCbiYwDiOpKs-1zXrnegeNXvp6HXF5Yv6XpR11tV3fkWXfJag/exec" method="POST">
+              <form id="contactForm" class="contact-form" action="https://script.google.com/macros/s/AKfycbwvoIdbeQHxhYyp9XPKQZFCeLEH8JDj-_u3me6o_Tl7/dev" method="POST">
                 <div class="form-field col x-50">
                   <input type="text" id="name" name="name" class="input-text" required>
                   <label for="name" class="label">氏名</label>
@@ -182,30 +182,23 @@
   <div id="footer-container"></div>
   
   <script>
-    document.addEventListener('DOMContentLoaded', function () {
-      // フォーム送信の処理
-      document.getElementById('AKfycbx0x7x1McI0UX_Jx2JvuDCbiYwDiOpKs-1zXrnegeNXvp6HXF5Yv6XpR11tV3fkWXfJag').addEventListener('submit', function (e) {
-        e.preventDefault();
-        var form = e.target;
-        var formData = new FormData(form);
-        fetch(form.action, {
-          method: 'POST',
-          body: formData
-        }).then(response => {
-          if (response.ok) {
-            alert('Your message has been sent!');
-            form.reset();
-            document.querySelectorAll('.input-text').forEach(input => {
-              input.classList.remove('not-empty');
-            });
-          } else {
-            alert('There was a problem with the submission.');
-          }
-        }).catch(error => {
-          alert('There was a problem with the submission.');
-        });
-      });
-    });
+document.getElementById('contactForm').addEventListener('submit', function (e) {
+  e.preventDefault();
+  const form = e.target;
+  const formData = new FormData(form);
+  const xhr = new XMLHttpRequest();
+  xhr.open('POST', form.action);
+  xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
+  xhr.onload = function () {
+    if (xhr.status === 200) {
+      alert('Successfully submitted');
+    } else {
+      alert('Error: ' + xhr.statusText);
+    }
+  };
+  xhr.send(new URLSearchParams(formData).toString());
+});
+
   </script>
 </body>
 
