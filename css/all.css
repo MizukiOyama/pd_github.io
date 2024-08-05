@@ -157,7 +157,7 @@ a::after {
     transform: rotate(30deg);
 }
 
-.head a,
+header a,
 footer a,
 section .top-s .note a {
     position: relative;
@@ -165,8 +165,8 @@ section .top-s .note a {
     margin: 0;
 }
 
-.head a::after,
-.head a::before,
+header a::after,
+header a::before,
 footer a::after,
 footer a::before,
 section .top-s .note a::after,
