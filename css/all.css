@@ -161,7 +161,7 @@ a::after {
     width: 20px;
     border-top: 1px solid var(--accent-color);
     transform: rotate(30deg);
-}*/
+}
 
 header a,
 footer a,
@@ -182,7 +182,7 @@ section .top-s .note a::before {
 
 section .top-s .note a:hover {
     text-decoration: underline;
-}
+}*/
 /*===================== リンク =====================*/
 
 /*===================== Section =====================*/
