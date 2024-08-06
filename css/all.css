@@ -114,7 +114,7 @@ li {
 /*===================== body text =====================*/
 
 /*===================== リンク =====================*/
-a {
+/*a {
     font-family: futura-pt, sans-serif;
     font-weight: 400;
     font-style: italic;
@@ -128,8 +128,14 @@ a {
     text-decoration: none;
     overflow: hidden;
     transition: all 0.3s ease;
-}
-
+}*/
+a {
+    color: #333; /* 文字色 */
+    display: inline-block; /* これがないとリンク範囲が全幅になる */
+    font-size: 36px; /* 文字サイズ */
+    position: relative; /* 相対位置指定 */
+    text-decoration: none; /* デフォルトのテキストの下線を消す */
+  }
 a::after {
     background-color: #333; /* 下線の色 */
     bottom: -4px; /* 要素の下端からの距離 */
