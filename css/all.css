@@ -1,14 +1,19 @@
 :root {
-    /* メインカラー */
+    /*=メインカラー rgba(214,228,218)*/
     --main-color: #D6E4DA;
-    /* サブカラー rgba(0, 58, 66)*/
-    --sub-color: #003A42;
-    /* ベースカラー */
+    /*=サブカラー rgba(0,58,66)*/
+    --sub-color: #2d8d86;
+    /*=ベースカラー rgba(46,46,46)*/
     --base-color: #2E2E2E;
-    /* アクセントカラー */
-    --accent-color: #00AF98;
-    /* rgba(245, 252, 246)*/
+    /*=アクセントカラー rgba(90,202,152)*/
+    --accent-color: #5ACA98;
+    /*=ホワイトカラー rgba(245,252,246)*/
     --white-color: #F5FCF6;
+}
+
+body,header,footer,h1,h2,h3,h4,p,ul,ol,li,a,div,span,img {
+    margin: 0;
+    padding: 0;
 }
 
 /*===================== Scrollbar =====================*/
@@ -49,12 +54,6 @@
 
 }
 /*===================== head =====================*/
-
-body,header,footer,h1,h2,h3,h4,p,ul,ol,li,a,div,span,img {
-    margin: 0;
-    padding: 0;
-}
-
 
 /*===================== body text =====================*/
 body {
@@ -127,18 +126,22 @@ a {
     position: absolute;
     right: 10%;
     bottom: 3%;
+    text-decoration: none;
+    overflow: hidden;
     transition: all 0.3s ease;
 }
 
-a:hover {
+a::before {
+    content: '-';
+    width: 3px;
+    left: 0;
+}
+a::before:hover {
+    width: 5px;
     color: var(--sub-color);
 }
 
-a::before:hover {
-    width: 200px;
-}
-
-a::before {
+/*a::before {
     content: "";
     display: block;
     width: 150px;
@@ -158,7 +161,7 @@ a::after {
     width: 20px;
     border-top: 1px solid var(--accent-color);
     transform: rotate(30deg);
-}
+}*/
 
 header a,
 footer a,
@@ -200,7 +203,6 @@ section .section1 {
     width: 100%;
     /*background: url('https://mizukioyama.github.io/pd/hp-img/wave01.png') no-repeat center center;
     background-size: cover;*/
-
 }
 
 /*.background::before {
@@ -335,7 +337,6 @@ section .box {
 }
 .section4 h3 {
     font-size: clamp(4rem, calc(4rem + 0.5vw), 6rem);
-    font-family: liana, script;
     font-weight: 400;
     line-height: 4.5rem;
 }
