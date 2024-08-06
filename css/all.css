@@ -121,8 +121,8 @@ a {
     font-size: clamp(1.2rem, calc(1.2rem + 0.5vw), 1.6rem);
     color: var(--accent-color);
     width: fit-content;
-    text-decoration: none;
     padding: 0.25em 0.5em;
+    display: inline-block;
     position: absolute;
     right: 10%;
     bottom: 3%;
@@ -139,7 +139,24 @@ a::before {
 a::before:hover {
     width: 5px;
     color: var(--sub-color);
+    text-decoration: underline;
 }
+a::after {
+    background-color: #333;
+    bottom: -4px;
+    content: "";
+    height: 2px;
+    left: 0;
+    position: absolute;
+    transform: scale(0, 1);
+    transform-origin: left top;
+    transition: transform .3s;
+    width: 100%;
+  }
+
+a:hover::after {
+    transform: scale(1, 1);
+  }
 
 /*a::before {
     content: "";
@@ -161,7 +178,7 @@ a::after {
     width: 20px;
     border-top: 1px solid var(--accent-color);
     transform: rotate(30deg);
-}
+}*/
 
 header a,
 footer a,
@@ -179,10 +196,6 @@ section .top-s .note a::after,
 section .top-s .note a::before {
     display: none;
 }
-
-section .top-s .note a:hover {
-    text-decoration: underline;
-}*/
 /*===================== リンク =====================*/
 
 /*===================== Section =====================*/
