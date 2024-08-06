@@ -185,7 +185,7 @@ section .top-s .note a:hover {
 /*===================== Section =====================*/
 section {
     width: 100%;
-    background-image: url('https://mizukioyama.github.io/pd/hp-img/section01-bg.png');
+    background-image: url('https://mizukioyama.github.io/pd/hp-img/section01-bg.png') no-repeat center center;
     background-size: cover;
     background-repeat: no-repeat;
     align-items: center;
@@ -194,6 +194,39 @@ section {
 
 section .section1 {
     background-image: url('https://mizukioyama.github.io/pd/hp-img/section02.png');
+}
+
+.background {
+    position: relative;
+    width: 100%;
+    height: 500px; /* 高さを調整してください */
+    background: url('https://mizukioyama.github.io/pd/hp-img/wave01.png') no-repeat center center;
+    background-size: cover;
+}
+
+.background::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, rgba(255, 0, 0, 0.5) 0%, rgba(0, 0, 255, 0.5) 100%);
+    z-index: 1;
+}
+
+.background::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('https://mizukioyama.github.io/pd/hp-img/wave02.png') no-repeat center center;
+    background-size: cover;
+    transform: rotate(-45deg); /* 斜めに配置 */
+    opacity: 0.5; /* 透明度を調整 */
+    z-index: 2;
 }
 
 
