@@ -120,10 +120,9 @@ a {
     font-style: italic;
     font-size: clamp(1.2rem, calc(1.2rem + 0.5vw), 1.6rem);
     color: var(--accent-color);
-    width: fit-content;
     padding: 0.25em 0.5em;
     display: inline-block;
-    position: absolute;
+    position: relative;
     right: 10%;
     bottom: 3%;
     text-decoration: none;
@@ -132,20 +131,21 @@ a {
 }
 
 a::after {
-    background-color: #333;
-    bottom: -4px;
-    content: "";
-    height: 2px;
-    left: 0;
-    position: absolute;
-    transform: scale(0, 1);
-    transform-origin: left top;
-    transition: transform .3s;
-    width: 100%;
+    background-color: #333; /* 下線の色 */
+    bottom: -4px; /* 要素の下端からの距離 */
+    content: ""; /* 要素に内容を追加 */
+    height: 2px; /* 下線の高さ */
+    left: 0; /* 要素の左端からの距離 */
+    position: absolute; /* 絶対位置指定 */
+    transform: scale(0, 1); /* 下線を横方向に0倍、縦方向に1倍に変形（非表示） */
+    transform-origin: left top; /* 変形の原点を左上に指定 */
+    transition: transform .3s; /* 変形をアニメーション化 */
+    width: 100%; /* 要素の幅 */
   }
-
-a:hover::after {
-    transform: scale(1, 1);
+  /* リンクにホバーした際の下線の表示 */
+  a:hover::after {
+    transform-origin: right top; /* 変形の原点を右上に指定 */
+    transform: scale(1, 1); /* 下線を横方向に1倍、縦方向に1倍に変形（表示） */
   }
 
 /*a::before {
