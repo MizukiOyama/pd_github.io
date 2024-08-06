@@ -198,13 +198,9 @@ section .section1 {
 
 .background {
     width: 100%;
-    /*background: url('https://mizukioyama.github.io/pd/hp-img/wave01.png') no-repeat center center;*/
-    background-size: cover;
-background-image:  linear-gradient(#444cf7 2.4000000000000004px, transparent 2.4000000000000004px), linear-gradient(90deg, #444cf7 2.4000000000000004px, transparent 2.4000000000000004px), linear-gradient(#444cf7 1.2000000000000002px, transparent 1.2000000000000002px), linear-gradient(90deg, #444cf7 1.2000000000000002px, #e5e5f7 1.2000000000000002px);
-background-size: 60px 60px, 60px 60px, 12px 12px, 12px 12px;
-background-position: -2.4000000000000004px -2.4000000000000004px, -2.4000000000000004px -2.4000000000000004px, -1.2000000000000002px -1.2000000000000002px, -1.2000000000000002px -1.2000000000000002px;
-opacity: 0.1;
-position: absolute;
+    /*background: url('https://mizukioyama.github.io/pd/hp-img/wave01.png') no-repeat center center;
+    background-size: cover;*/
+
 }
 
 /*.background::before {
@@ -226,8 +222,13 @@ position: absolute;
     left: 80%;
     width: 100%;
     height: 100%;
-    background: linear-gradient(135deg, rgba(255, 0, 0, 0.5) 0%, rgba(0, 0, 255, 0.5) 100%), url('https://mizukioyama.github.io/pd/hp-img/wave02.png') no-repeat center center;
-    background-size: cover;
+    /*background: linear-gradient(135deg, rgba(255, 0, 0, 0.5) 0%, rgba(0, 0, 255, 0.5) 100%), url('https://mizukioyama.github.io/pd/hp-img/wave02.png') no-repeat center center;
+    background-size: cover;*/
+    background-image:  linear-gradient(#444cf7 2.4000000000000004px, transparent 2.4000000000000004px), linear-gradient(90deg, #444cf7 2.4000000000000004px, transparent 2.4000000000000004px), linear-gradient(#444cf7 1.2000000000000002px, transparent 1.2000000000000002px), linear-gradient(90deg, #444cf7 1.2000000000000002px, #e5e5f7 1.2000000000000002px);
+    background-size: 60px 60px, 60px 60px, 12px 12px, 12px 12px;
+    background-position: -2.4000000000000004px -2.4000000000000004px, -2.4000000000000004px -2.4000000000000004px, -1.2000000000000002px -1.2000000000000002px, -1.2000000000000002px -1.2000000000000002px;
+    opacity: 0.1;
+    position: absolute;
     transform: rotate(-45deg); /* 斜めに配置 */
     opacity: 0.5;
 }
