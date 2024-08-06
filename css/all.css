@@ -131,16 +131,6 @@ a {
     transition: all 0.3s ease;
 }
 
-a::before {
-    content: '-';
-    width: 3px;
-    left: 0;
-}
-a::before:hover {
-    width: 5px;
-    color: var(--sub-color);
-    text-decoration: underline;
-}
 a::after {
     background-color: #333;
     bottom: -4px;
