@@ -91,8 +91,7 @@ h3 {
 
 h2,
 h3,
-h4,
-a {
+h4 {
     font-family: roca, sans-serif;
     font-weight: 300;
     color: var(--sub-color);
@@ -117,6 +116,9 @@ li {
 
 /*===================== リンク =====================*/
 a {
+    font-family: futura-pt, sans-serif;
+    font-weight: 400;
+    font-style: italic;
     font-size: clamp(1.2rem, calc(1.2rem + 0.5vw), 1.6rem);
     color: var(--accent-color);
     width: fit-content;
