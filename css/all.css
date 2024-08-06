@@ -230,7 +230,6 @@ section .section1 {
     opacity: 0.1;
     position: absolute;
     transform: rotate(-45deg); /* 斜めに配置 */
-    opacity: 0.5;
 }
 .section4 .background::after {
     top: -80%;
