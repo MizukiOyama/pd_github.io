@@ -138,11 +138,11 @@ a::after {
     left: 0;
     position: absolute;
     transform: scale(0, 1);
-    transform-origin: left top;
+    transform-origin: right top;
     transition: transform 0.3s ease;
 }
 a:hover::after {
-    transform-origin: right top;
+    transform-origin: left top;
     transform: scale(1, 1);
 }
 

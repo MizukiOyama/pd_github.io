@@ -90,8 +90,8 @@ input:-webkit-autofill:focus {
     width: 70pt;
     height: 35pt;
     display: inline-block;
-    background-color: var(--base-color);
     color: var(--white-color);
+    background-color: var(--base-color);
     text-transform: uppercase;
     letter-spacing: 0.2rem;
     line-height: 1.5rem;
@@ -101,7 +101,8 @@ input:-webkit-autofill:focus {
     cursor: pointer;
 }
 .contact-form .submit-btn:hover {
-    color: var(--main-color);
+    color: var(--base-color);
+    background: var(--main-color);
 }
 
 .align-center {
