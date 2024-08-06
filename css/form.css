@@ -100,6 +100,9 @@ input:-webkit-autofill:focus {
     border: none;
     cursor: pointer;
 }
+.contact-form .submit-btn:hover {
+    color: var(--main-color);
+}
 
 .align-center {
     width: 100%;
