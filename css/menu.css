@@ -41,12 +41,13 @@ nav {
 }
 #navArea .inner li a::before {
     content: '-';
-    width: 3px;
-    left: -6px;
 }
 #navArea .inner li a:hover {
     text-shadow: 0 1px 3px var(--base-color);
-    opacity: 1;
+    opacity: 0.5;
+}
+#navArea .inner li a::after {
+    bottom: 0;
 }
 /* .toggle_btn styles */
 .toggle_btn {
