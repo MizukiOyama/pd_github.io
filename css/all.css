@@ -419,8 +419,8 @@ section img {
 /*===================== About =====================*/
 
 .about .section4 .top-s {
-    width: clamp(800px, 100%, 650px);
-    height: 600px;
+    width: clamp(750px, 100%, 550px);
+    height: 450px;
     padding: 2em 4.5em;
     align-items: center;
     transform: translate(-40%, -25%);
@@ -428,8 +428,9 @@ section img {
 
 .about .section4 .top-s::before {
     content: "";
-    width: clamp(800px, 100%, 650px);
-    height: 600px;
+    width: clamp(750px, 100%, 550px);
+    height: 450px;
+    background: rgba(245, 252, 246, 0.7);
     padding: 2em 4.5em;
     align-items: center;
     position: absolute;
