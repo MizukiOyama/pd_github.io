@@ -434,12 +434,15 @@ section img {
     padding: 2em 4.5em;
     align-items: center;
     position: absolute;
-    transform: translate(50%, 80%);
+    transform: translate(80%, 50%);
+}
+.section4 .top-s::before {
     border-style: none;
+    border-width: 0;
+    top: 0;
     z-index: -1;
     opacity: 1;
 }
-
 .about .section4 h3 {
     font-size: clamp(4rem, calc(4rem + 0.5vw), 6rem);
     font-weight: 400;
