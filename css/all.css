@@ -151,7 +151,7 @@ a:hover::after {
 /*===================== Section =====================*/
 section {
     width: 100%;
-    background: linear-gradient(rgba(245, 252, 246, 0.7), rgba(245, 252, 246, 0.7)), 
+    background: linear-gradient(rgba(225, 232, 226, 0.55), rgba(225, 232, 226, 0.55)), 
     url('https://mizukioyama.github.io/pd/hp-img/section01-line01.png') no-repeat center center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -197,10 +197,10 @@ section #tab-1 {
     position: absolute;
     transform: rotate(-45deg); /* 斜めに配置 */
 }
+
 .section4 .background::after {
     top: -80%;
 }
-
 
 /*===================== h1 top =====================*/
 section .top-h1 {
@@ -286,6 +286,7 @@ section .box {
     padding: 2em 4.5em;
     align-items: center;
 }
+
 .section4 .top-s::before {
     content: "";
     width: 30%;
@@ -299,6 +300,7 @@ section .box {
     opacity: 0.4;
     /*background: repeating-linear-gradient(-215deg, rgba(0, 58, 66, 0.8), rgba(0, 58, 66, 0.55) 70px, rgba(0, 58, 66, 0.8) 0, rgba(0, 58, 66, 0.55) 70px);*/
 }
+
 .section4 h3 {
     font-size: clamp(4rem, calc(4rem + 0.5vw), 6rem);
     font-weight: 400;
@@ -309,6 +311,7 @@ section .box {
     text-align: center;
     margin: 0 auto;
 }
+
 /*===================== Section =====================*/
 
 /*===================== img =====================*/
@@ -378,7 +381,7 @@ section img {
     background-repeat: no-repeat;
     background-position: center;
     /*box-shadow: inset 0 0 10px 0 var(--base-color);*/
-    mix-blend-mode: color-burn;
+    mix-blend-mode: multiply;
     border-radius: 30px;
 }
 
@@ -399,10 +402,10 @@ section img {
     top: 20%;
     z-index: 1;
     background-image: url('https://mizukioyama.github.io/pd/hp-img/overall.png');
+    border-radius: 30px;
     background-size: cover;
     background-repeat: no-repeat;
-    mix-blend-mode: color-burn;
-    border-radius: 30px;
+    mix-blend-mode: multiply;
 }
 
 .section4 .img {
