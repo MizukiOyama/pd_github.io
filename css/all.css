@@ -205,7 +205,7 @@ section #tab-1 {
 section .top-h1 {
     font-weight: 600;
     position: absolute;
-    top: 45%;
+    top: 55%;
     left: 4%;
     color: var(--base-color);
 }
