@@ -423,11 +423,11 @@ section img {
     right: -5%;
 }
 
-#tab-1 .top-s,
-#tab-2 .top-s,
-#tab-3 .top-s,
-#tab-4 .top-s,
-#tab-5 .top-s {
+.about #tab-1 .top-s,
+.about #tab-2 .top-s,
+.about #tab-3 .top-s,
+.about #tab-4 .top-s,
+.about #tab-5 .top-s {
     transform: translate(0%, 0%);
 }
 
