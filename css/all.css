@@ -409,3 +409,30 @@ section img {
     height: 450px;
     background-image: url('https://mizukioyama.github.io/pd/hp-img/ai-service01.png');
 }
+
+/*===================== About =====================*/
+.about .section1 img,
+.about .section2 img,
+.about .section3 img,
+.about .section4 img {
+    width: 35%;
+}
+
+.about .section1 img {
+    width: 30%;
+    bottom: 3%;
+    left: 3%;
+    /*transform:rotate(-10deg);*/
+}
+
+.about .section2 img {
+    width: 25%;
+    bottom: 3%;
+    right: 3%;
+}
+
+.about .section3 img {
+    width: 25%;
+    right: 0;
+    bottom: 3%;
+}
