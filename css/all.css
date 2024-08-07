@@ -410,6 +410,12 @@ section img {
     background-image: url('https://mizukioyama.github.io/pd/hp-img/ai-service01.png');
 }
 
+/*===================== Top =====================*/
+.top #tab-1 .top-s {
+    transform: translate(0%, 0%);
+}
+
+
 /*===================== About =====================*/
 .about .section1 img,
 .about .section2 img,
