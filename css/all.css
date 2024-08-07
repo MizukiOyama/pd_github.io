@@ -158,7 +158,7 @@ section {
     border-bottom: 15px solid var(--white-color);
 }
 
-section .section1 {
+section #tab-1 {
     background-image: url('https://mizukioyama.github.io/pd/hp-img/section02.png');
 }
 
@@ -372,7 +372,7 @@ section img {
     top: 15%;
     left: -10%;
     z-index: 1;
-    background-image: url('https://mizukioyama.github.io/pd/hp-img/overall.png');
+    background-image: url('https://mizukioyama.github.io/pd/hp-img/tower.png');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -384,7 +384,7 @@ section img {
 .section3 .img {
     width: clamp(700px, 100%, 600px);
     height: 500px;
-    background-image: url('https://mizukioyama.github.io/pd/hp-img/skill02.png');
+    background-image: url('https://mizukioyama.github.io/pd/hp-img/skill01.png');
 }
 
 .section2 .img,
@@ -397,7 +397,7 @@ section img {
     right: -8%;
     top: 20%;
     z-index: 1;
-    background-image: url('https://mizukioyama.github.io/pd/hp-img/ai-service01.png');
+    background-image: url('https://mizukioyama.github.io/pd/hp-img/overall.png');
     background-size: cover;
     background-repeat: no-repeat;
     mix-blend-mode: color-burn;
