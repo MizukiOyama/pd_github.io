@@ -151,7 +151,8 @@ a:hover::after {
 /*===================== Section =====================*/
 section {
     width: 100%;
-    background: linear-gradient rgba(245, 252, 246, 0.7), url('https://mizukioyama.github.io/pd/hp-img/section01-line01.png') no-repeat center center;
+    background: linear-gradient(rgba(245, 252, 246, 0.7), rgba(245, 252, 246, 0.7)), 
+    url('https://mizukioyama.github.io/pd/hp-img/section01-line01.png') no-repeat center center;
     background-size: cover;
     background-repeat: no-repeat;
     align-items: center;
