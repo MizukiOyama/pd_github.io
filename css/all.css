@@ -430,11 +430,18 @@ section img {
     content: "";
     width: clamp(750px, 100%, 550px);
     height: 450px;
-    background: rgba(245, 252, 246, 0.7);
+    background-color: rgba(245, 252, 246, 0.7);
     padding: 2em 4.5em;
     align-items: center;
     position: absolute;
     transform: translate(40%, 25%);
+}
+.section4 .top-s::before {
+    border-style: none;
+    border-width: 0;
+    top: 0;
+    z-index: -1;
+    opacity: 1;
 }
 .about .section4 h3 {
     font-size: clamp(4rem, calc(4rem + 0.5vw), 6rem);
