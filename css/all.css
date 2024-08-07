@@ -426,12 +426,11 @@ section img {
 .about #tab-1 .top-s,
 .about #tab-2 .top-s,
 .about #tab-3 .top-s,
-.about #tab-4 .top-s,
 .about #tab-5 .top-s {
     transform: translate(0%, 0%);
 }
 
-.about .section4 .top-s {
+.about #tab-4 .top-s {
     width: clamp(750px, 100%, 550px);
     height: 450px;
     padding: 2em 4.5em;
@@ -449,6 +448,7 @@ section img {
     position: absolute;
     transform: translate(80%, 50%);
 }
+
 .section4 .top-s::before {
     border-style: none;
     border-width: 0;
@@ -456,6 +456,7 @@ section img {
     z-index: -1;
     opacity: 1;
 }
+
 .about .section4 h3 {
     font-size: clamp(4rem, calc(4rem + 0.5vw), 6rem);
     font-weight: 400;
