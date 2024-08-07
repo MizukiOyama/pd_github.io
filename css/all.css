@@ -417,6 +417,19 @@ section img {
 
 
 /*===================== About =====================*/
+.about #top-img {
+    width: 75%;
+    top: -5%;
+    right: -5%;
+}
+
+#tab-1 .top-s,
+#tab-2 .top-s,
+#tab-3 .top-s,
+#tab-4 .top-s,
+#tab-5 .top-s {
+    transform: translate(0%, 0%);
+}
 
 .about .section4 .top-s {
     width: clamp(750px, 100%, 550px);
