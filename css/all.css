@@ -345,7 +345,7 @@ section img {
 .section1 img {
     width: 30%;
     bottom: 3%;
-    left: 3%;
+    left: 0;
     /*transform:rotate(-10deg);*/
 }
 
