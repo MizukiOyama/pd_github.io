@@ -6,7 +6,7 @@ nav {
     top: 0;
     right: -100%;
     bottom: 0;
-    width: 50%;
+    width: 40%;
     background: var(--white-color);
     overflow-x: hidden;
     overflow-y: auto;
@@ -154,16 +154,18 @@ nav {
     transition: 0.8s ease;
 }
 .open #mask {
-    display: block;
+    display: flex;
     position: fixed;
     top: 0;
-    right: 0;
-    width: 100%;
+    left: 0;
+    width: 60%;
     height: 100%;
     background: rgba(46, 46, 46, 0.9);
     cursor: pointer;
     transition: all 1s ease;
     animation: menu-left 1s ease;
+    justify-content: center;
+    align-items: end;
     z-index: 998;
 }
 @keyframes menu-left {
@@ -176,21 +178,18 @@ nav {
 }
 
 .open #mask ul {
-    width: 100vmin;
-    margin: calc(35% - 5vw) 0 0 calc(15% - 5vw);
+    width: fit-content;
+    margin: calc(35% - 5vw) 0 0;
 }
 .open #mask ul p {
     font-size: clamp(1.2em, calc(1.2em + 0.5vw), 1.4em);
     color: var(--white-color);
-    position: relative;
-    left: 1vmin;
-    margin: calc(10% - 5vw) 0 0 0;
+    margin: 0;
 }
 .open #mask li {
-    width: calc(60% - 10vw);
+    width: 90%;
     color: var(--main-color);
-    margin-top: 3em;
-    left: 0;
-    padding: 0 1em 0 .5em;
+    margin: 1.5rem auto;
+    padding: 0 0.25em 0.15rem;
     border-bottom: 1px solid;
 }
