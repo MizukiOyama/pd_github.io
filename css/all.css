@@ -12,7 +12,7 @@
 }
 
 ::selection {
-    background-color: var(--accent-color);
+    background-color: rgba(90,202,152, 0.5);
 }
 
 body,header,footer,h1,h2,h3,h4,p,ul,ol,li,a,div,span,img {
@@ -78,7 +78,6 @@ h1 {
     color: var(--base-color);
     width: fit-content;
     line-height: 1em;
-    mix-blend-mode: color-dodge;
 }
 
 h2 {
@@ -219,9 +218,9 @@ section .top-h1 .h1 {
 }
 
 section .top-h1 .caption {
+    font-size: clamp(1.4rem, calc(1.4rem + 0.1vw), 1.8rem);
     font-weight: 600;
     margin: 0;
-    mix-blend-mode: color-dodge;
 }
 /*===================== h1 top =====================*/
 
