@@ -40,16 +40,16 @@ body,header,footer,h1,h2,h3,h4,p,ul,ol,li,a,div,span,img {
 /*===================== head =====================*/
 .head {
     position: absolute;
-    top: 0.25%;
-    left: 2%;
+    top: 0;
+    left: 0;
     z-index: 1;
 
     a {
-        width: 75%;
+        width: 55vmin;
         padding: 0.25em 0.5em;
 
-        span {
-            font-size: clamp(1.2rem, calc(1.2rem + 0.1vw), 1.6rem);
+        img {
+            width: 55vmin;
         }
     }
 
