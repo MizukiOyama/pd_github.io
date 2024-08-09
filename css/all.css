@@ -445,6 +445,14 @@ section img {
     opacity: 1;
 }
 
+.about #tab-1 .top-s p,
+.about #tab-2 .top-s p,
+.about #tab-3 .top-s p,
+.about #tab-4 .top-s p,
+.about #tab-5 .top-s p {
+    width: 80%;
+}
+
 .about .section4 h3 {
     font-size: clamp(4rem, calc(4rem + 0.5vw), 6rem);
     font-weight: 400;
