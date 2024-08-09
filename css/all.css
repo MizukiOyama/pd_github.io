@@ -45,10 +45,7 @@ body,header,footer,h1,h2,h3,h4,p,ul,ol,li,a,div,span,img {
     z-index: 1;
 
     a {
-        font-family: liana, script;
-        font-weight: 500;
-        font-size: clamp(1.4rem, calc(1.4rem + 0.1vw), 1.8rem);
-        color: var(--base-color);
+        width: 75%;
         padding: 0.25em 0.5em;
 
         span {
@@ -352,7 +349,7 @@ section img {
 
 .section1 img {
     width: 25%;
-    bottom: 0;
+    bottom: -5%;
     left: 0;
     /*transform:rotate(-10deg);*/
 }
