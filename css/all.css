@@ -11,6 +11,10 @@
     --white-color: #F5FCF6;
 }
 
+::selection {
+    background-color: var(--accent-color);
+}
+
 body,header,footer,h1,h2,h3,h4,p,ul,ol,li,a,div,span,img {
     margin: 0;
     padding: 0;
@@ -347,8 +351,8 @@ section img {
 }
 
 .section1 img {
-    width: 30%;
-    bottom: 3%;
+    width: 25%;
+    bottom: 0;
     left: 0;
     /*transform:rotate(-10deg);*/
 }
