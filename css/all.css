@@ -41,15 +41,14 @@ body,header,footer,h1,h2,h3,h4,p,ul,ol,li,a,div,span,img {
 .head {
     position: absolute;
     top: 0;
-    left: 0;
+    left: 1.5%;
     z-index: 1;
 
     a {
-        width: 55vmin;
         padding: 0.25em 0.5em;
 
         img {
-            width: 45vmin;
+            width: 35vmin;
         }
     }
 
