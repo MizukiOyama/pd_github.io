@@ -437,6 +437,13 @@ section img {
     transform: translate(0%, 0%);
 }
 
+.section4 .top-s::before {
+    border-style: none;
+    border-width: 0;
+    top: 0;
+    z-index: -1;
+    opacity: 1;
+}
 
 .about .section4 h3 {
     font-size: clamp(4rem, calc(4rem + 0.5vw), 6rem);
@@ -446,7 +453,7 @@ section img {
 
 #tab-4 .top-s .text {
     text-align: center;
-    margin: 0 auto;
+    margin: 3% auto 0;
 }
 
 /*===================== About img =====================*/
