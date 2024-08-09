@@ -43,6 +43,7 @@ body,header,footer,h1,h2,h3,h4,p,ul,ol,li,a,div,span,img {
     top: 0;
     left: 1.5%;
     z-index: 1;
+    mix-blend-mode: color-dodge;
 
     a {
         padding: 0.25em 0.5em;
@@ -75,8 +76,9 @@ h1 {
     font-family: liana, script;
     font-weight: 400;
     color: var(--base-color);
-    line-height: 1em;
     width: fit-content;
+    line-height: 1em;
+    mix-blend-mode: color-dodge;
 }
 
 h2 {
@@ -219,6 +221,7 @@ section .top-h1 .h1 {
 section .top-h1 .caption {
     font-weight: 600;
     margin: 0;
+    mix-blend-mode: color-dodge;
 }
 /*===================== h1 top =====================*/
 
